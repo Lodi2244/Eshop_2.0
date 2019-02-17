@@ -1,34 +1,67 @@
-<h2>Sign up</h2>
-
+<div class="body-wrap">
+  <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path 'backgrounds/slider/img-45.jpg' %>); background-position: bottom center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="card form-card form-card--style-2">
+                  <div class="form-header text-center">
+                      <div class="form-header-icon">
+                          <i class="icon icon-3x ion-ios-personadd-outline"></i>
+                      </div>
+                  </div>
+                  <div class="form-body">
+                      <div class="text-center px-2">
+                        <h5 class="heading heading-5 strong-500">
+                          Create a new account
+                      </h5>
+                    </div>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
-
-  <div class="field">
+  <div class="card-body">
+      <form class="form-default" data-toggle="validator" role="form">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
     <%= f.label :username %><br />
-    <%= f.text_field :username, autofocus: true %>
+    <%= f.text_field :username, autofocus: true, class:"form-control form-control-lg" %>
   </div>
-
-  <div class="field">
+</div>
+<div class="col-md-6">
+    <div class="form-group">
     <%= f.label :email %><br />
-    <%= f.email_field :email %>
+    <%= f.email_field :email, class:"form-control form-control-lg" %>
   </div>
-
-  <div class="field">
+</div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
     <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <small>(<%= @minimum_password_length %> characters minimum)</small>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", class:"form-control form-control-lg" %>
   </div>
+</div>
 
-  <div class="field">
+<div class="col-md-6">
+    <div class="form-group">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control form-control-lg" %>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+</div>
+</div>
+<span class="space-md-md">
+    <%= f.submit "Sign up", class: "btn btn-styled btn-md btn-block btn-base-1 mt-4" %>
 <% end %>
+</span>
+</form>
 
-<%= render "devise/shared/links" %>
+<%= render "devise/shared/links1" %>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div><!-- END: body-wrap -->

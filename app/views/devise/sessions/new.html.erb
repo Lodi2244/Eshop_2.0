@@ -1,56 +1,57 @@
 <div class="body-wrap">
-        <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url(slider/img-45.jpg); background-position: bottom center;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="card form-card form-card--style-2">
-                          <div class="form-header text-center">
-                              <div class="form-header-icon">
-                                  <i class="icon ion-log-in"></i>
-                              </div>
-                            </div>
-                            <div class="form-body">
-                                <div class="text-center px-2">
-                                    <h4 class="heading heading-4 strong-400 mb-4">Sign in to your account</h4>
+  <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url('../../assets/images/backgrounds/slider/img-45.jpg'); background-position: bottom center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="card form-card form-card--style-2">
+                  <div class="form-header text-center">
+                      <div class="form-header-icon">
+                          <i class="icon icon-3x ion-ios-personadd-outline"></i>
+                      </div>
+                  </div>
+                  <div class="form-body">
+                      <div class="text-center px-2">
+                                  <h5 class="heading heading-5 strong-500">
+                                    Sign in to your account
+                                  </h5>
                                 </div>
-                            <div class="card-body">
                                 <form class="form-default" role="form">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="form-group">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
     <%= f.label :login %><br />
-    <%= f.text_field :login, autofocus: true %>
+    <%= f.text_field :login, autofocus: true, class:"form-control form-control-lg" %>
   </div>
  </div>
-</div>
 </div>
   <div class="row">
       <div class="col-lg-12">
           <div class="form-group has-feedback">
-  <div class="field">
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.password_field :password, autocomplete: "current-password", class:"form-control form-control-lg" %>
   </div>
-</div>
-</div>
+ </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
         <div class="checkbox">
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
+          <input type="checkbox" id="chkRemember">
+      <% if devise_mapping.rememberable? %>
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
+      <% end %>
     </div>
+   </div>
   </div>
-</div>
-</div>
-  <% end %>
-
     <%= f.submit "Sign in", class: "btn btn-styled btn-lg btn-block btn-base-1 mt-4" %>
 <% end %>
 
-<%= render "devise/shared/links" %>
+</form>
+</div>
+</div>
+
+
+<%= render "devise/shared/links1" %>
+</section>
 </div><!-- END: body-wrap -->
