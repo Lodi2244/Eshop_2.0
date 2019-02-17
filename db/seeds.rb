@@ -128,4 +128,3 @@ items.item_images.attach(io: File.open('app/assets/images/eclairage/nikon1188724
 
 items = Item.create!(title: "nikon-speedlight-sb5000", description: g, price: "25", user_id: "1", category_id: "2", address: ' 5 Boulevard Diderot 75012 PARIS', city: "Paris")
 items.item_images.attach(io: File.open('app/assets/images/eclairage/nikon-speedlight-sb5000.png'), filename: 'nikon-speedlight-sb5000.png', content_type: 'image/png')
-

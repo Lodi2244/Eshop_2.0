@@ -21,7 +21,6 @@
 #  last_name              :string
 #
 
-
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -30,7 +29,6 @@ class User < ApplicationRecord
   validates :username, presence: true, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9 _\.]*\z/ }
 
   devise :database_authenticatable, :registerable,
-
          :recoverable, :rememberable, :validatable, :confirmable
 
   def self.find_first_by_auth_conditions(warden_conditions)
