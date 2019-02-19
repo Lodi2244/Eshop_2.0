@@ -64,8 +64,6 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "ECommerce_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
-  config.action_mailer.perform_deliveries = false
-
 
   Rails.application.routes.default_url_options[:host] = 'domain.com'
 

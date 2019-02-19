@@ -26,7 +26,7 @@ FactoryBot.define do
     password_faker = Faker::Internet.password
     password               { password_faker }
     password_confirmation  { password_faker }
-    email                  { Faker::Internet.free_email }
+    email                  { Faker::Internet.email }
     username               { Faker::Internet.username }
   end
 end
