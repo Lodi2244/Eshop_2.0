@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_02_19_100339) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,6 +44,12 @@ ActiveRecord::Schema.define(version: 2019_02_19_100339) do
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_carts_on_item_id"
     t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "item_orders", force: :cascade do |t|
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
