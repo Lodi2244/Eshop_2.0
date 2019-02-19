@@ -5,8 +5,8 @@
 # Table name: items
 #
 #  id          :bigint(8)        not null, primary key
-#  title       :string           not null
-#  description :text             not null
+#  title       :string
+#  description :text
 #  price       :float            not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
