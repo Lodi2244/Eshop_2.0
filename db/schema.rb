@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_12_190230) do
+ActiveRecord::Schema.define(version: 2019_02_19_100339) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,28 @@ ActiveRecord::Schema.define(version: 2019_02_12_190230) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "carts", force: :cascade do |t|
+    t.integer "quantity"
+    t.bigint "user_id"
+    t.bigint "item_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_carts_on_item_id"
+    t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "item_orders", force: :cascade do |t|
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "description"
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -43,10 +65,19 @@ ActiveRecord::Schema.define(version: 2019_02_12_190230) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.integer "category_id"
     t.string "address"
     t.string "city"
+    t.string "image_url"
     t.index ["user_id"], name: "index_items_on_user_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.float "total_price"
+    t.string "status"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,15 +87,23 @@ ActiveRecord::Schema.define(version: 2019_02_12_190230) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "carts", "items"
+  add_foreign_key "carts", "users"
   add_foreign_key "items", "users"
+  add_foreign_key "orders", "users"
 end
