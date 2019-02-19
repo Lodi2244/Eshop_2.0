@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 # == Schema Information
 #
 # Table name: items
@@ -14,7 +13,6 @@
 #  address     :string
 #  city        :string
 #  image_url   :string
-#  category_id :bigint(8)
 #
 
 require 'rails_helper'
