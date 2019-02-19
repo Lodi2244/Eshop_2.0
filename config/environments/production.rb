@@ -64,6 +64,8 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "ECommerce_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.perform_deliveries = false
+
 
   Rails.application.routes.default_url_options[:host] = 'domain.com'
 
@@ -93,6 +95,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { host: 'eshop-staging.herokuapp.com' }
 
 end

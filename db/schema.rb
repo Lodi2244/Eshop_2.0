@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_19_100339) do
+ActiveRecord::Schema.define(version: 2019_02_19_161952) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,8 @@ ActiveRecord::Schema.define(version: 2019_02_19_100339) do
     t.string "address"
     t.string "city"
     t.string "image_url"
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_items_on_category_id"
     t.index ["user_id"], name: "index_items_on_user_id"
   end
 
@@ -117,6 +119,7 @@ ActiveRecord::Schema.define(version: 2019_02_19_100339) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "carts", "items"
   add_foreign_key "carts", "users"
+  add_foreign_key "items", "categories"
   add_foreign_key "items", "users"
   add_foreign_key "orders", "users"
 end
