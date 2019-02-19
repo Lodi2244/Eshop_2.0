@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'cart/index'
+  get 'cart/show'
+  get 'cart/update'
+  get 'cart/destroy'
   get 'orders/index'
   get 'orders/show'
   get 'orders/new'
