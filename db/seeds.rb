@@ -17,7 +17,7 @@ d = "zoom grand angle"
 # g = "flash cobra"
 h = "éclairage continu"
 
-User.create!(email: "test2@gmail.com", password: "123456", password_confirmation: "123456", first_name: "Elodie", last_name: "Pixeloo", username: "Elo2")
+User.create!(email: "test3@gmail.com", password: "123456", password_confirmation: "123456", first_name: "Elodie", last_name: "Pixeloo", username: "Elo3")
 
 Category.destroy_all
 
@@ -28,42 +28,42 @@ Category.create!(name: "Eclairage", description: "Tout type d'éclairage artific
 Item.destroy_all
 
 # categorie 1
-items = Item.create!(title: "Nikon D700", description: a, price: "10", user_id: 2, category_id: 1, address: '20 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/nikonD700.jpg")
+items = Item.create!(title: "Nikon D700", description: a, price: "10", user_id: 3, category_id: 1, address: '20 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/nikonD700.jpg")
 items.item_images.attach(io: File.open('app/assets/images/boitier/nikonD700.jpg'), filename: 'canon-eos-5d.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "canon eos-5d", description: a, price: "40", user_id: 2, category_id: 1, address: '20 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/canon-eos-5d.jpg")
+items = Item.create!(title: "canon eos-5d", description: a, price: "40", user_id: 3, category_id: 1, address: '20 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/canon-eos-5d.jpg")
 items.item_images.attach(io: File.open('app/assets/images/boitier/canon-eos-5d.jpg'), filename: 'canon-eos-5d.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "canon eos-6d", description: a, price: "40", user_id: 2, category_id: 1, address: '19 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/canon-eos-6d.jpg")
+items = Item.create!(title: "canon eos-6d", description: a, price: "40", user_id: 3, category_id: 1, address: '19 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/canon-eos-6d.jpg")
 items.item_images.attach(io: File.open('app/assets/images/boitier/canon-eos-6d.jpg'), filename: 'canon-eos-6d.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "canon eos-650", description: b, price: "35", user_id: 2, category_id: 1, address: '14 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/canon-eos-650.jpg")
+items = Item.create!(title: "canon eos-650", description: b, price: "35", user_id: 3, category_id: 1, address: '14 rue Saint Roch 75001 PARIS', city: "Paris", image_url: "boitier/canon-eos-650.jpg")
 items.item_images.attach(io: File.open('app/assets/images/boitier/canon-eos-650.jpg'), filename: 'canon-eos-650.jpg', content_type: 'image/jpg')
 
 # Categorie 3
-items = Item.create!(title: "sigma-17-70mm-f28-4-dc-macro-os-hsm", description: d, price: "15", user_id: 2, category_id: 3, address: '71 avenue Henri Martin 75016 PARIS', city: "Paris", image_url: "objectif/17-70mm-f28-4-dc-macro-os-hsm-sigma.jpg")
+items = Item.create!(title: "sigma-17-70mm-f28-4-dc-macro-os-hsm", description: d, price: "15", user_id: 3, category_id: 3, address: '71 avenue Henri Martin 75016 PARIS', city: "Paris", image_url: "objectif/17-70mm-f28-4-dc-macro-os-hsm-sigma.jpg")
 items.item_images.attach(io: File.open('app/assets/images/objectif/17-70mm-f28-4-dc-macro-os-hsm-sigma.jpg'), filename: '17-70mm-f28-4-dc-macro-os-hsm-sigma.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "sigma-18-35mm-f18-dc-hsm", description: d, price: "20", user_id: 2, category_id: 3, address: '120 rue Ordener 75018 PARIS', city: "Paris", image_url: "objectif/location-objectif-sigma-18-35mm-f18-dc-hsm.jpg")
+items = Item.create!(title: "sigma-18-35mm-f18-dc-hsm", description: d, price: "20", user_id: 3, category_id: 3, address: '120 rue Ordener 75018 PARIS', city: "Paris", image_url: "objectif/location-objectif-sigma-18-35mm-f18-dc-hsm.jpg")
 items.item_images.attach(io: File.open('app/assets/images/objectif/location-objectif-sigma-18-35mm-f18-dc-hsm.jpg'), filename: 'location-objectif-sigma-18-35mm-f18-dc-hsm.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "sigma-35mm-f14-dg-hsm", description: c, price: "15", user_id: 2, category_id: 3, address: '121 rue Paradis, 13006 Marseille', city: "Marseille", image_url: "objectif/sigma-35mm-f14-dg-hsm.jpg")
+items = Item.create!(title: "sigma-35mm-f14-dg-hsm", description: c, price: "15", user_id: 3, category_id: 3, address: '121 rue Paradis, 13006 Marseille', city: "Marseille", image_url: "objectif/sigma-35mm-f14-dg-hsm.jpg")
 items.item_images.attach(io: File.open('app/assets/images/objectif/sigma-35mm-f14-dg-hsm.jpg'), filename: 'sigma-35mm-f14-dg-hsm.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "canon-ef-50mm-f12-l-usm", description: c, price: "30", user_id: 2, category_id: 3, address: '48 rue St Andre des arts 75006 PARIS', city: "Paris", image_url: "objectif/canon-ef-50mm-f12-l-usm.jpg")
+items = Item.create!(title: "canon-ef-50mm-f12-l-usm", description: c, price: "30", user_id: 3, category_id: 3, address: '48 rue St Andre des arts 75006 PARIS', city: "Paris", image_url: "objectif/canon-ef-50mm-f12-l-usm.jpg")
 items.item_images.attach(io: File.open('app/assets/images/objectif/canon-ef-50mm-f12-l-usm.jpg'), filename: 'canon-ef-50mm-f12-l-usm.jpg', content_type: 'image/jpg')
 
 # Categorie 2
-items = Item.create!(title: "aputure-ls-mini-20d-148", description: a, price: "40", user_id: 2, category_id: 2, address: '12 rue peins 75013 PARIS', city: "Paris", image_url: "eclairage/aputure-ls-mini-20d-148.jpg")
+items = Item.create!(title: "aputure-ls-mini-20d-148", description: a, price: "40", user_id: 3, category_id: 2, address: '12 rue peins 75013 PARIS', city: "Paris", image_url: "eclairage/aputure-ls-mini-20d-148.jpg")
 items.item_images.attach(io: File.open('app/assets/images/eclairage/aputure-ls-mini-20d-148.jpg'), filename: 'aputure-ls-mini-20d-148.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "Fresnel-HMI-4000w-Arri-D40", description: h, price: "15", user_id: 2, category_id: 2, address: '33 bvd de picpus 75012 PARIS', city: "Paris", image_url: "eclairage/Fresnel-HMI-4000w-Arri-D40.png")
+items = Item.create!(title: "Fresnel-HMI-4000w-Arri-D40", description: h, price: "15", user_id: 3, category_id: 2, address: '33 bvd de picpus 75012 PARIS', city: "Paris", image_url: "eclairage/Fresnel-HMI-4000w-Arri-D40.png")
 items.item_images.attach(io: File.open('app/assets/images/eclairage/Fresnel-HMI-4000w-Arri-D40.png'), filename: 'Fresnel-HMI-4000w-Arri-D40.png', content_type: 'image/png')
 
-items = Item.create!(title: "idv-f50-fresnel-7ab", description: h, price: "35", user_id: 2, category_id: 2, address: '140 rue Paradis, 13006 Marseille', city: "Marseille", image_url: "eclairage/idv-f50-fresnel-led-ultra-compact-7ab.jpg")
+items = Item.create!(title: "idv-f50-fresnel-7ab", description: h, price: "35", user_id: 3, category_id: 2, address: '140 rue Paradis, 13006 Marseille', city: "Marseille", image_url: "eclairage/idv-f50-fresnel-led-ultra-compact-7ab.jpg")
 items.item_images.attach(io: File.open('app/assets/images/eclairage/idv-f50-fresnel-led-ultra-compact-7ab.jpg'), filename: 'idv-f50-fresnel-led-ultra-compact-7ab.jpg', content_type: 'image/jpg')
 
-items = Item.create!(title: "skylite-900fd-5600k-940", description: a, price: "20", user_id: 2, category_id: 2, address: '23 bis rue Bichat 75010 PARIS', city: "Paris", image_url: "eclairage/skylite-900fd-5600k-940.jpg")
+items = Item.create!(title: "skylite-900fd-5600k-940", description: a, price: "20", user_id: 3, category_id: 2, address: '23 bis rue Bichat 75010 PARIS', city: "Paris", image_url: "eclairage/skylite-900fd-5600k-940.jpg")
 items.item_images.attach(io: File.open('app/assets/images/eclairage/skylite-900fd-5600k-940.jpg'), filename: 'skylite-900fd-5600k-940.jpg', content_type: 'image/jpg')
 
 # items = Item.create!(title: "lumix DC-GH5EF", description: a, price: "35", user_id: "1", category_id: "1", address: '3 rue de Lisbonne 75008 PARIS', city: "Paris")
