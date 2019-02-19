@@ -46,11 +46,6 @@ ActiveRecord::Schema.define(version: 2019_02_19_100339) do
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
-  create_table "item_orders", force: :cascade do |t|
-    t.integer "quantity"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -58,9 +53,20 @@ ActiveRecord::Schema.define(version: 2019_02_19_100339) do
     t.string "description"
   end
 
+  create_table "item_orders", force: :cascade do |t|
+    t.bigint "item_id"
+    t.bigint "order_id"
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id", "order_id"], name: "index_item_orders_on_item_id_and_order_id", unique: true
+    t.index ["item_id"], name: "index_item_orders_on_item_id"
+    t.index ["order_id"], name: "index_item_orders_on_order_id"
+  end
+
   create_table "items", force: :cascade do |t|
-    t.string "title", null: false
-    t.text "description", null: false
+    t.string "title"
+    t.text "description"
     t.float "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -69,6 +75,13 @@ ActiveRecord::Schema.define(version: 2019_02_19_100339) do
     t.string "city"
     t.string "image_url"
     t.index ["user_id"], name: "index_items_on_user_id"
+  end
+
+  create_table "items_orders", id: false, force: :cascade do |t|
+    t.bigint "item_id", null: false
+    t.bigint "order_id", null: false
+    t.index ["item_id", "order_id"], name: "index_items_orders_on_item_id_and_order_id"
+    t.index ["order_id", "item_id"], name: "index_items_orders_on_order_id_and_item_id"
   end
 
   create_table "orders", force: :cascade do |t|

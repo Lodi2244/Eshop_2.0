@@ -31,11 +31,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-
   has_many :orders, dependent: :destroy
   has_many :carts, dependent: :destroy
   has_many :items, through: :carts
-
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
