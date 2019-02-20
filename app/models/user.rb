@@ -35,6 +35,7 @@ class User < ApplicationRecord
   has_many :carts, dependent: :destroy
   has_many :items, through: :carts
 
+  # Authorize user to log in with either his email or username
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
 
@@ -43,9 +44,5 @@ class User < ApplicationRecord
     else
       where(conditions.to_hash).first
     end
-
-    # puts "======="
-    # puts warden_conditions.inspect
-    # puts "======="
   end
 end

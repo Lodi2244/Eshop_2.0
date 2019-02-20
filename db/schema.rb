@@ -65,8 +65,8 @@ ActiveRecord::Schema.define(version: 2019_02_19_161952) do
   end
 
   create_table "items", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
+    t.string "title", null: false
+    t.text "description", null: false
     t.float "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -77,13 +77,6 @@ ActiveRecord::Schema.define(version: 2019_02_19_161952) do
     t.bigint "category_id"
     t.index ["category_id"], name: "index_items_on_category_id"
     t.index ["user_id"], name: "index_items_on_user_id"
-  end
-
-  create_table "items_orders", id: false, force: :cascade do |t|
-    t.bigint "item_id", null: false
-    t.bigint "order_id", null: false
-    t.index ["item_id", "order_id"], name: "index_items_orders_on_item_id_and_order_id"
-    t.index ["order_id", "item_id"], name: "index_items_orders_on_order_id_and_item_id"
   end
 
   create_table "orders", force: :cascade do |t|

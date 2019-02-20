@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ItemsController < ApplicationController
+  include CurrentCart
   before_action :set_current_cart
 
   def index

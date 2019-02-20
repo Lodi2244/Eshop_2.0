@@ -28,5 +28,6 @@ FactoryBot.define do
     password_confirmation  { password_faker }
     email                  { Faker::Internet.email }
     username               { Faker::Internet.username }
+    confirmed_at           { Time.zone.now }
   end
 end
