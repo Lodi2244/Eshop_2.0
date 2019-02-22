@@ -25,15 +25,13 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   attr_accessor :login
-  has_many :items
+
   validates :username, presence: true, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9 _\.]*\z/ }
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
   has_many :orders, dependent: :destroy
-  has_many :carts, dependent: :destroy
-  has_many :items, through: :carts
 
   # Authorize user to log in with either his email or username
   def self.find_first_by_auth_conditions(warden_conditions)
