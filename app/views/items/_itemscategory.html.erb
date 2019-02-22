@@ -1,32 +1,36 @@
+<i class="icon ion-android-cart"></i>
+
 
 <section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset=".header">
     <div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="fade" data-swiper-items="1" data-swiper-space-between="0">
         <div class="swiper-wrapper">
 <!-- Slide -->
 <div class="swiper-slide" data-swiper-autoplay="10000">
-    <div class="holder-item slice sct-color-1 has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path 'categories/reflex.jpg' %>); background-position: left center;">
+    <div class="holder-item slice sct-color-1 has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/prv/shop/electronics/img-bg-1.png); background-position: left center;">
         <div class="container d-flex align-items-center">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 holder-item-light">
                     <div class="animated" data-animation-in="zoomIn" data-animation-delay="400">
-                      <% @items.sample(1) do |item| %>
                         <h2 class="heading heading-xl strong-600 c-gray-dark mb-0">
+                          <% @items.sample(2) do |item| %>
                           <%= item.title %>
                         </h2>
                         <div class="pr-5">
                             <p class="c-gray-light mt-4">
                               <%= item.description %>
                             </p>
+
                             <span class="d-block heading-xs text-uppercase c-gray-light mt-4">Starting from:</span>
                             <h2 class="heading heading-2 strong-600 c-base-1 mt-2">
                                 <%= item.price %>
                             </h2>
+
                             <div class="btn-container mt-4">
                                 <a href="#" class="btn btn-styled btn-base-1 btn-circle btn-icon-left" data-scroll-to="#scrollToSection">
                                     <i class="icon ion-android-cart"></i>
-                                    <% link_to "Rent now", category_item_path(item_id: item.id) %>
+                                    <%= link_to "Rent now", category_item_path(item_id: item.id) %>
+                                    <% end %> 
                                 </a>
-                                <% end %>
                             </div>
                         </div>
                     </div>
@@ -35,7 +39,7 @@
                 <div class="col-12 col-md-6">
                     <div class="block block-image-holder animated d-none d-lg-block" data-animation-in="slideInRight" data-animation-delay="200">
                         <div class="block-image">
-                            <img src="assets/images/prv/shop/electronics/img-slider-2.png">
+                          <%= image_tag("boitier/nikon D3500.png", :alt => "")%>
                         </div>
                     </div>
                 </div>
