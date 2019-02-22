@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'carts/show'
   get 'cart/index'
   get 'cart/show'
   get 'cart/update'
