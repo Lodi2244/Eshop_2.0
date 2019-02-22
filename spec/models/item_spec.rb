@@ -5,16 +5,11 @@
 # Table name: items
 #
 #  id          :bigint(8)        not null, primary key
-#  title       :string           not null
-#  description :text             not null
-#  price       :float            not null
+#  name        :string
+#  description :text
+#  price       :decimal(, )
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  user_id     :bigint(8)
-#  address     :string
-#  city        :string
-#  image_url   :string
-#  category_id :bigint(8)
 #
 
 require 'rails_helper'
