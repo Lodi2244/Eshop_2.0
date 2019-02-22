@@ -20,7 +20,7 @@ class Item < ApplicationRecord
   validates :price, presence: { message: "Le prix doit être renseigné." }, numericality: { only_float: true }
 
   has_one_attached :item_image
-  belongs_to :category
+  belongs_to :category, optional: true
   has_many :item_orders, dependent: :destroy
   has_many :orders, through: :item_orders
 
