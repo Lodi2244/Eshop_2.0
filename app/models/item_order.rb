@@ -13,4 +13,9 @@
 #
 
 class ItemOrder < ApplicationRecord
+  validates :quantity, presence: true,
+                       numericality: { only_integer: true, greater_than_or_equal: 0 }
+
+  belongs_to :item
+  belongs_to :order
 end

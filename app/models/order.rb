@@ -13,7 +13,12 @@
 #
 
 class Order < ApplicationRecord
+  validates :status, presence: true
+  validates :total_price, presence: true,
+                          numericality: { only_float: true }
   belongs_to :user
   has_many :item_orders, dependent: :destroy
   has_many :items, through: :item_orders
+
+  enum status: %i[in_progress cancelled confirmed paid]
 end

@@ -22,9 +22,10 @@ class Item < ApplicationRecord
   validates :title, presence: { message: "Le titre doit être renseigné." }
   validates :price, presence: { message: "Le prix doit être renseigné." }, numericality: { only_float: true }
 
-  has_many_attached :item_images
-  belongs_to :user, optional: true
-  belongs_to :category, optional: true
+  has_one_attached :item_image
+  belongs_to :category
+  has_many :item_orders, dependent: :destroy
+  has_many :orders, through: :item_orders
 
   def add_to_cart
     item = Item.find(item_id)
