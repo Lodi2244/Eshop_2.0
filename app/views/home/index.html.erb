@@ -309,8 +309,8 @@
         <% if user_signed_in? %>
             <li><%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete, class: "nav-perso" %></li>
         <% else %>
-            <li id="link1"><button class="btn btn-styled btn-sm btn-base-1 btn-outline btn-circle"><%= link_to 'Se connecter', new_user_session_path, class: "nav-perso" %></button></li>
-            <li id="link2"><button class="btn btn-base-1 btn-circle "><%= link_to 'Créer un compte', new_user_registration_path, class: "nav-perso" %></button></li>
+            <li id="link1"><button class="btn btn-styled btn-base-1 btn-outline btn-circle"><%= link_to 'Se connecter', new_user_session_path, class: "nav-perso" %></button></li>
+            <li id="link2"><button class="btn btn_styled btn-base-1 btn-circle "><%= link_to 'Créer un compte', new_user_registration_path, class: "nav-perso" %></button></li>
         <% end %>
     </ul>
     <ul class="navbar-nav">
