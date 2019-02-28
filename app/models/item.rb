@@ -29,6 +29,6 @@ class Item < ApplicationRecord
     current_cart = current_user.carts.items
     current_cart << item
     flash[:success] = 'Item successfully added to cart!'
-    redirect_to item_path(params[:id])
+    redirect_to category_item_path(params[:id])
   end
 end
