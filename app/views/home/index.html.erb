@@ -1,1523 +1,590 @@
-
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="robots" content="index, follow">
-<meta name="description" content="Boomerang is a responsive website template based on the well known Bootstrap framework. It's very well structured with lots of features and demos ready to be used.">
-<meta name="keywords" content="bootstrap, responsive, template, website, html, theme, ux, ui, web, design, developer, support, business, corporate, real estate, education, medical, school, education, demo, css, framework">
-<meta name="author" content="Webpixels">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Boomerang is a responsive website template based on the well known Bootstrap framework. It's very well structured with lots of features and demos ready to be used.">
+    <meta name="keywords" content="bootstrap, responsive, template, website, html, theme, ux, ui, web, design, developer, support, business, corporate, real estate, education, medical, school, education, demo, css, framework">
+    <meta name="author" content="Webpixels">
 
-<title>Bienvenu sur Pixeloo</title>
+    <title>Bienvenu sur Pixeloo</title>
 
+  </head>
+  <body>
 
-</head>
-<body>
-
-
-<!-- MAIN WRAPPER -->
-<div class="body-wrap shop-default shop-cards shop-tech">
-    <div id="st-container" class="st-container">
+    <!-- MAIN WRAPPER -->
+    <div class="body-wrap shop-default shop-cards shop-tech">
+      <div id="st-container" class="st-container">
 
         <nav class="st-menu st-effect-1" id="menu-1">
-    <div class="st-profile">
-        <div class="st-profile-user-wrapper">
-            <div class="profile-user-image">
+          <div class="st-profile">
+            <div class="st-profile-user-wrapper">
+              <div class="profile-user-image">
                 <%= image_tag("prv/people/person-1.jpg", :alt => "" , :class => "")%>
-            </div>
-            <div class="profile-user-info">
+              </div>
+              <div class="profile-user-info">
                 <span class="profile-user-name">Bertram Ozzie</span>
                 <span class="profile-user-email">username@example.com</span>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
-    <div class="st-menu-list mt-2">
-        <ul>
-            <li>
+          <div class="st-menu-list mt-2">
+            <ul>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-bookmarks-outline"></i> Theme documentation
+                  <i class="ion-ios-bookmarks-outline"></i>
+                  Theme documentation
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-cart-outline"></i> Purchase Tribus
+                  <i class="ion-ios-cart-outline"></i>
+                  Purchase Tribus
                 </a>
-            </li>
-        </ul>
-    </div>
+              </li>
+            </ul>
+          </div>
 
-    <h3 class="st-menu-title">Account</h3>
-    <div class="st-menu-list">
-        <ul>
-            <li>
+          <h3 class="st-menu-title">Account</h3>
+          <div class="st-menu-list">
+            <ul>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-person-outline"></i> User profile
+                  <i class="ion-ios-person-outline"></i>
+                  User profile
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-location-outline"></i> My addresses
+                  <i class="ion-ios-location-outline"></i>
+                  My addresses
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
-                    <i class="ion-card"></i> My cards
+                  <i class="ion-card"></i>
+                  My cards
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-unlocked-outline"></i> Password update
+                  <i class="ion-ios-unlocked-outline"></i>
+                  Password update
                 </a>
-            </li>
-        </ul>
-    </div>
+              </li>
+            </ul>
+          </div>
 
-    <h3 class="st-menu-title">Support center</h3>
-    <div class="st-menu-list">
-        <ul>
-            <li>
+          <h3 class="st-menu-title">Support center</h3>
+          <div class="st-menu-list">
+            <ul>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-information-outline"></i> About Tribus
+                  <i class="ion-ios-information-outline"></i>
+                  About Tribus
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
-                    <i class="ion-ios-email-outline"></i> Contact &amp; support
+                  <i class="ion-ios-email-outline"></i>
+                  Contact &amp; support
                 </a>
-            </li>
-            <li>
+              </li>
+              <li>
                 <a href="#">
-                    <i class="fa fa-camera"></i> Getting started
+                  <i class="fa fa-camera"></i>
+                  Getting started
                 </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
         <div class="st-pusher">
-            <div class="st-content">
-                <div class="st-content-inner">
-                    <!-- HEADER -->
-                    <div class="header">
-    <!-- Start Top Bar -->
-    <!-- Jai mis ceci volontairement en commentaire pour le moment car il y a des parties à récupérer pour plus tard
-        - La Search bar
-        - Le panier
-        Ce sera à supprimer par la suite
-    <div class="top-navbar">
-	<div class="container">
-        <div class="row">
-            <div class="col-md-6">
-            	<span class="aux-text d-none d-md-inline-block">
-                    <ul class="inline-links inline-links--style-1">
-                        <li class="d-none d-lg-inline-block">
-							Boomerang - Multipurpose Bootstrap Theme                        </li>
-                        <li>
-                            <i class="fa fa-envelope"></i>
-                            <a href="#">support@webpixels.io</a>
-                        </li>
-                    </ul>
-                </span>
-			</div>
+          <div class="st-content">
+            <div class="st-content-inner">
+              <!-- HEADER -->
+              <div class="header">
+                <!-- Start Top Bar -->
+                <!-- Jai mis ceci volontairement en commentaire pour le moment car il y a des parties à récupérer pour plus tard - La Search bar - Le panier Ce sera à supprimer par la suite <div class="top-navbar"> <div class="container"> <div class="row"> <div
+                class="col-md-6"> <span class="aux-text d-none d-md-inline-block"> <ul class="inline-links inline-links--style-1"> <li class="d-none d-lg-inline-block"> Boomerang - Multipurpose Bootstrap Theme </li> <li> <i class="fa fa-envelope"></i> <a
+                href="#">support@webpixels.io</a> </li> </ul> </span> </div> <div class="col-md-6"> <nav class="top-navbar-menu"> <ul class="top-menu"> <% if user_signed_in? %> <li><%= link_to 'se deconnecter' , destroy_user_session_path, method: :delete%></li> <%
+                else %> <li><%= link_to 'se connecter', new_user_session_path %></li> <li><%= link_to 'Créer un compte', new_user_session_path %></li> <% end %> <li><a href="#" data-toggle="global-search"><i class="fa fa-search"></i></a></li> <li class="dropdown">
+                <a href="#"> <i class="fa fa-shopping-cart"></i> </a> <ul class="sub-menu"> <li> <div class="dropdown-cart px-0"> <div class="dc-header"> <h3 class="heading heading-6 strong-600">Cart</h3> </div> <div class="dc-item"> <div class="d-flex
+                align-items-center"> <div class="dc-image"> <a href="#"> <img src="img-1a.png" class="img-fluid" alt=""> </a> </div> <div class="dc-content"> <span class="d-block dc-product-name text-capitalize strong-600 mb-1"> <a href="#"> Wood phone case </a>
+                </span> <span class="dc-quantity">x2</span> <span class="dc-price">$50.00</span> </div> <div class="dc-actions"> <button> <i class="ion-close"></i> </button> </div> </div> </div> <div class="dc-item"> <div class="d-flex align-items-center"> <div
+                class="dc-image"> <a href="#"> <%= image_tag("prv/shop/accessories/img-2a.png", :alt => "" , :class => "")%> </a> </div> <div class="dc-content"> <span class="d-block dc-product-name text-capitalize strong-600 mb-1"> <a href="#"> Leather bag </a>
+                </span> <span class="dc-quantity">x1</span> <span class="dc-price">$250.00</span> </div> <div class="dc-actions"> <button> <i class="ion-close"></i> </button> </div> </div> </div> <div class="dc-item"> <div class="d-flex align-items-center"> <div
+                class="dc-image"> <a href="#"> <img src="../../assets/images/prv/shop/accessories/img-3a.png" class="img-fluid" alt=""> </a> </div> <div class="dc-content"> <span class="d-block dc-product-name text-capitalize strong-600 mb-1"> <a href="#"> Brown
+                leather wallet </a> </span> <span class="dc-quantity">x1</span> <span class="dc-price">$99.00</span> </div> <div class="dc-actions"> <button> <i class="ion-close"></i> </button> </div> </div> </div> <div class="dc-item py-4"> <span
+                class="subtotal-text">Subtotal</span> <span class="subtotal-amount">$450.00</span> </div> <div class="py-4 text-center"> <ul class="inline-links inline-links--style-3"> <li class="pr-3"> <a href="#" class="link link--style-2 text-capitalize"> <i
+                class="ion-person"></i> My account </a> </li> <li class="pr-3"> <a href="#" class="link link--style-1 text-capitalize"> <i class="ion-bag"></i> View cart </a> </li> <li> <a href="#" class="link link--style-1 text-capitalize"> <i
+                class="ion-forward"></i> Checkout </a> </li> </ul> </div> </div> </li> </ul> </li> <li class="aux-languages dropdown"> <a href="#"> <img src="../../assets/images/icons/flags/ro.png"> <%= image_tag("icons/flags/ro.png", :alt => "" , :class => "")%>
+                </a> <ul id="auxLanguages" class="sub-menu"> <li> <a href="#"><span class="language">German</span></a> </li> <li> <span class="language language-active">English</span> </li> <li> <a href="#"><span class="language">Greek</span></a> </li> <li> <a
+                href="#"><span class="language">Spanish</span></a> </li> </ul> </li> <li><a href="#" class="btn-st-trigger" data-effect="st-effect-1"><i class="fa fa-ellipsis-h"></i></a></li> </ul> </nav> </div> </div> </div> </div> <!-- end Top Bar-->
 
-			<div class="col-md-6">
-            	<nav class="top-navbar-menu">
-                    <ul class="top-menu">
-                        <% if user_signed_in? %>
-                            <li><%= link_to 'se deconnecter' , destroy_user_session_path, method: :delete%></li>
-                        <% else %>
-                            <li><%= link_to 'se connecter', new_user_session_path  %></li>
-                            <li><%= link_to 'Créer un compte', new_user_session_path  %></li>
-                        <% end %>
+                <!-- Global Search -->
+                <section id="sctGlobalSearch" class="global-search global-search-overlay">
+                  <div class="container">
+                    <div class="global-search-backdrop mask-dark--style-2"></div>
 
-						<li><a href="#" data-toggle="global-search"><i class="fa fa-search"></i></a></li>
-						<li class="dropdown">
-							<a href="#">
-								<i class="fa fa-shopping-cart"></i>
-							</a>
-							<ul class="sub-menu">
-						<li>
-									<div class="dropdown-cart px-0">
-    <div class="dc-header">
-        <h3 class="heading heading-6 strong-600">Cart</h3>
-    </div>
-    <div class="dc-item">
-        <div class="d-flex align-items-center">
-            <div class="dc-image">
-                <a href="#">
-                    <img src="img-1a.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="dc-content">
-                <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
-                    <a href="#">
-                        Wood phone case
-                    </a>
-                </span>
-
-                <span class="dc-quantity">x2</span>
-                <span class="dc-price">$50.00</span>
-            </div>
-            <div class="dc-actions">
-                <button>
-                    <i class="ion-close"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="dc-item">
-        <div class="d-flex align-items-center">
-            <div class="dc-image">
-                <a href="#">
-                    <%= image_tag("prv/shop/accessories/img-2a.png", :alt => "" , :class => "")%>
-                </a>
-            </div>
-            <div class="dc-content">
-                <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
-                    <a href="#">
-                        Leather bag
-                    </a>
-                </span>
-
-                <span class="dc-quantity">x1</span>
-                <span class="dc-price">$250.00</span>
-            </div>
-            <div class="dc-actions">
-                <button>
-                    <i class="ion-close"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="dc-item">
-        <div class="d-flex align-items-center">
-            <div class="dc-image">
-                <a href="#">
-                    <img src="../../assets/images/prv/shop/accessories/img-3a.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="dc-content">
-                <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
-                    <a href="#">
-                        Brown leather wallet
-                    </a>
-                </span>
-
-                <span class="dc-quantity">x1</span>
-                <span class="dc-price">$99.00</span>
-            </div>
-            <div class="dc-actions">
-                <button>
-                    <i class="ion-close"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="dc-item py-4">
-        <span class="subtotal-text">Subtotal</span>
-        <span class="subtotal-amount">$450.00</span>
-    </div>
-    <div class="py-4 text-center">
-        <ul class="inline-links inline-links--style-3">
-            <li class="pr-3">
-                <a href="#" class="link link--style-2 text-capitalize">
-                    <i class="ion-person"></i> My account
-                </a>
-            </li>
-            <li class="pr-3">
-                <a href="#" class="link link--style-1 text-capitalize">
-                    <i class="ion-bag"></i> View cart
-                </a>
-            </li>
-            <li>
-                <a href="#" class="link link--style-1 text-capitalize">
-                    <i class="ion-forward"></i> Checkout
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-								</li>
-							</ul>
-						</li>
-                        <li class="aux-languages dropdown">
-                            <a href="#">
-                                <img src="../../assets/images/icons/flags/ro.png">
-                                <%= image_tag("icons/flags/ro.png", :alt => "" , :class => "")%>
-                            </a>
-                            <ul id="auxLanguages" class="sub-menu">
-                                <li>
-                                    <a href="#"><span class="language">German</span></a>
-                                </li>
-                                <li>
-                                    <span class="language language-active">English</span>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="language">Greek</span></a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="language">Spanish</span></a>
-                                </li>
-                            </ul>
-                        </li>
-						<li><a href="#" class="btn-st-trigger" data-effect="st-effect-1"><i class="fa fa-ellipsis-h"></i></a></li>
-                    </ul>
-				</nav>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end Top Bar-->
-
-    <!-- Global Search -->
-    <section id="sctGlobalSearch" class="global-search global-search-overlay">
-    <div class="container">
-        <div class="global-search-backdrop mask-dark--style-2"></div>
-
-        <!-- Search form -->
-        <form class="form-horizontal form-global-search z-depth-2-top" role="form">
-            <div class="px-4">
-                <div class="row">
-                    <div class="col-12">
-                        <input type="text" class="search-input" placeholder="Type and hit enter ...">
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="close-search" data-toggle="global-search" title="Close search bar"></a>
-        </form>
-    </div>
-</section>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-transparent navbar-expand-lg navbar--bold navbar--style-2 navbar-light bg-default  navbar--shadow fixed-top">
-        <div class="container navbar-container">
-            <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="../../index.html">
-                <%= image_tag("logo/logo-1-d.png", :alt => "pixeloo" , :class => "img-fluid main-img")%>
-                            </a>
-
-            <div class="d-inline-block">
-                <!-- Navbar toggler  -->
-                <button class="navbar-toggler hamburger hamburger-js hamburger--spring" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-
-            <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbar_main">
-    <!-- Navbar search - For small resolutions -->
-    <div class="navbar-search-widget b-xs-bottom py-3 d-lg-none d-none">
-        <form class="" role="form">
-            <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                <button class="btn btn-base-3" type="button">Go!</button>
-                </span>
-            </div>
-        </form>
-    </div>
-
-    <!-- Navbar links -->
-
-    <ul class="navbar-nav ml-lg-auto">
-        <% if user_signed_in? %>
-            <li class="nav-item"><%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete, class: "nav-perso"%></li>
-        <% else %>
-            <li class="nav-item"><%= link_to 'Se connecter', new_user_session_path, class: "nav-perso"  %></li>
-            <li class="nav-item"><%= link_to 'Créer un compte', new_user_registration_path, class: "nav-perso"  %></li>
-        <% end %>
-    </ul>
-</div>
-
-<div class=" d-none d-lg-inline-block d-xl-inline-block">
-    <ul class="navbar-nav ml-auto" data-hover="dropdown">
-        <li class="nav-item nav-item-icon hidden-md-down">
-            <a href="#" class="nav-link btn-st-trigger" data-effect="st-effect-1">
-                <span><i class="fa fa-bars"></i></span>
-            </a>
-        </li>
-    </ul>
-</div>
-
-        </div>
-    </nav>
-</div>
-
-                    <!-- REVOLUTION SLIDER -->
-                    <div id="rev_slider_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero39" data-source="gallery">
-<!-- START REVOLUTION SLIDER 5.3.0.2 fullwidth mode -->
-	<div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
-		<ul>
-			<li data-index="rs-1" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-thumb="../../images/slider/concept-1-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-				<!-- MAIN IMAGE -->
-                <%= image_tag("slider/iphone-1.jpg", :alt => "" , :class => "rev-slidebg")%>
-				<!-- LAYER NR. 2 -->
-				<div class="tp-caption title--style-1 c-white tp-resizeme" id="slide-1-layer-2"
-					data-x="['right','right','right','right']" data-hoffset="['0','0','50','50']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-					data-fontsize="['16','16','16','16']"
-					data-lineheight="['16','16','16','16']"
-					data-width="[300, 300, 300, 300]"
-					data-height="none"
-					data-whitespace="nowrap"
-					data-type="text"
-					data-responsive_offset="on"
-					data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-					data-textAlign="['left','left','left','left']"
-					data-paddingtop="[0,0,0,0]"
-					data-paddingright="[0,0,0,0]"
-					data-paddingbottom="[0,0,0,0]"
-					data-paddingleft="[0,0,0,0]"
-					style="z-index: 11; white-space: nowrap;text-transform:left;">
-
-					<span class="text-uppercase strong-400">No more waiting</span>
-
-				</div>
-
-				<div class="tp-caption title--style-1 c-white tp-resizeme" id="slide-1-layer-3"
-					data-x="['right','right','right','right']" data-hoffset="['0','0','50','50']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-					data-fontsize="['40','40','40','40']"
-					data-lineheight="['50','40','40','40']"
-					data-width="[300, 300, 300, 300]"
-					data-height="none"
-					data-whitespace="nowrap"
-					data-type="text"
-					data-responsive_offset="on"
-					data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-					data-textAlign="['left','left','left','left']"
-					data-paddingtop="[0,0,0,0]"
-					data-paddingright="[0,0,0,0]"
-					data-paddingbottom="[0,0,0,0]"
-					data-paddingleft="[0,0,0,0]"
-					style="z-index: 11; white-space: nowrap;text-transform:left;">
-
-					<span class="strong-400">
-						Say hello to
-					</span>
-					<br>
-					<span class="strong-600">
-						the new iPhone X
-					</span>
-
-				</div>
-
-				<!-- LAYER NR. 5 -->
-				<div class="tp-caption" id="slide-1-layer-5"
-					data-x="['right','right','right','right']" data-hoffset="['0','0','50','50']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['180','180','180','180']"
-					data-fontsize="['40','40','40','40']"
-					data-lineheight="['50','50','50','50']"
-					data-width="[300, 300, 300, 300]"
-					data-height="none"
-					data-whitespace="nowrap"
-					data-type="text"
-					data-responsive_offset="on"
-					data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-					data-textAlign="['left','left','left','left']"
-					data-paddingtop="[0,0,0,0]"
-					data-paddingright="[0,0,0,0]"
-					data-paddingbottom="[0,0,0,0]"
-					data-paddingleft="[0,0,0,0]"
-					style="z-index: 11; white-space: nowrap;text-transform:left;">
-
-					<a href="#" class="btn btn-base-1 btn-circle">Rent now</a>
-
-				</div>
-			</li>
-
-			<!-- SLIDE 2 -->
-			<li data-index="rs-2" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-thumb="../../images/slider/concept-1-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-				<!-- MAIN IMAGE -->
-                <%= image_tag("slider/macbook-1.jpg", :alt => "" , :class => "rev-slidebg")%>
-				<!-- LAYER NR. 2 -->
-				<div class="tp-caption title--style-1 c-white tp-resizeme" id="slide-2-layer-2"
-					data-x="['right','right','right','right']" data-hoffset="['0','0','50','50']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-					data-fontsize="['16','16','16','16']"
-					data-lineheight="['16','16','16','16']"
-					data-width="[300, 300, 300, 300]"
-					data-height="none"
-					data-whitespace="nowrap"
-					data-type="text"
-					data-responsive_offset="on"
-					data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-					data-textAlign="['left','left','left','left']"
-					data-paddingtop="[0,0,0,0]"
-					data-paddingright="[0,0,0,0]"
-					data-paddingbottom="[0,0,0,0]"
-					data-paddingleft="[0,0,0,0]"
-					style="z-index: 11; white-space: nowrap;text-transform:left;">
-
-					<span class="text-uppercase strong-400">It's here</span>
-
-				</div>
-
-				<div class="tp-caption title--style-1 c-white tp-resizeme" id="slide-2-layer-3"
-					data-x="['right','right','right','right']" data-hoffset="['0','0','50','50']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
-					data-fontsize="['40','40','40','40']"
-					data-lineheight="['50','40','40','40']"
-					data-width="[300, 300, 300, 300]"
-					data-height="none"
-					data-whitespace="nowrap"
-					data-type="text"
-					data-responsive_offset="on"
-					data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-					data-textAlign="['left','left','left','left']"
-					data-paddingtop="[0,0,0,0]"
-					data-paddingright="[0,0,0,0]"
-					data-paddingbottom="[0,0,0,0]"
-					data-paddingleft="[0,0,0,0]"
-					style="z-index: 11; white-space: nowrap;text-transform:left;">
-
-					<span class="strong-400">
-						A ne pas manquer
-					</span>
-					<br>
-					<span class="strong-600">
-						Offre promotionelle
-					</span>
-          <br>
-          <span class="strong-400">
-            sur ce produit
-          </span>
-
-
-
-				</div>
-
-				<!-- LAYER NR. 5 -->
-				<div class="tp-caption" id="slide-2-layer-5"
-					data-x="['right','right','right','right']" data-hoffset="['0','0','50','50']"
-					data-y="['middle','middle','middle','middle']" data-voffset="['180','180','180','180']"
-					data-fontsize="['40','40','40','40']"
-					data-lineheight="['50','50','50','50']"
-					data-width="[300, 300, 300, 300]"
-					data-height="none"
-					data-whitespace="nowrap"
-					data-type="text"
-					data-responsive_offset="on"
-					data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
-					data-textAlign="['left','left','left','left']"
-					data-paddingtop="[0,0,0,0]"
-					data-paddingright="[0,0,0,0]"
-					data-paddingbottom="[0,0,0,0]"
-					data-paddingleft="[0,0,0,0]"
-					style="z-index: 11; white-space: nowrap;text-transform:left;">
-
-					<a href="#" class="btn btn-base-1 btn-circle">Rent now</a>
-
-				</div>
-			</li>
-		</ul>
-		<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-	</div>
-</div><!-- END REVOLUTION SLIDER -->
-
-                    <section class="slice sct-color-2">
-                        <div class="container">
-                            <div class="section-title section-title--style-1 text-center">
-                                <h3 class="section-title-inner heading-3 strong-600 text-capitalize">
-                                    <span>Catégories principales</span>
-                                </h3>
-                            </div>
-
-                            <div class="row cols-xs-space cols-sm-space cols-md-space">
-                                <div class="col-lg-4">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <%= image_tag("categories/reflex.jpg", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Boîtiers numériques
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <%= link_to 'Explorer', category_items_path(category_id: 1), class: "btn  btn-gray-dark btn-circle px-4"  %>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <%= image_tag("categories/objectif.jpg", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Objectifs
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                            <%= link_to 'Explorer', category_items_path(category_id: 2), class: "btn  btn-gray-dark btn-circle px-4"  %>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <%= image_tag("categories/eclairage.jpg", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Eclairage studio & reportage
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                            <%= link_to 'Explorer', category_items_path(category_id: 3), class: "btn  btn-gray-dark btn-circle px-4"  %>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Search form -->
+                    <form class="form-horizontal form-global-search z-depth-2-top" role="form">
+                      <div class="px-4">
+                        <div class="row">
+                          <div class="col-12">
+                            <input type="text" class="search-input" placeholder="Type and hit enter ...">
+                          </div>
                         </div>
-                    </section>
-<!-- unusefull now
-                    <section class="slice sct-color-2">
-                        <div class="container">
-                            <div class="row align-items-end pb-100">
-                                <div class="col-lg-8 order-lg-2">
-                                    <div class="block block-image-holder">
-                                        <div class="block-image">
-                                            <%= image_tag("prv/shop/electronics/img-promo-wide-2.jpg", :alt => "" , :class => "img-fluid")%>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 order-lg-1">
-                                    <div class="feature feature--boxed-border floating-content floating-content--2 float--right mb--100 feature--bg-1 z-depth-2-top">
-                                        <div class="py-4 px-3">
-                                            <h2 class="heading heading-3 strong-600">
-                                                Listening to Music
-                                            </h2>
-                                            <span class="clearfix"></span>
-                                            <p class="mt-4 line-height-1_8">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-
-                                            <div class="btn-container mt-4">
-                                                <a href="#" class="btn btn-lg btn-gray-dark btn-circle px-4">Explore</a>
-                                                <a href="#" class="btn btn-lg btn-base-1 btn-circle btn-icon-left px-4">
-                                                    <i class="icon ion-bag"></i> Rent now
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="slice sct-color-2">
-                        <div class="container">
-                            <div class="row align-items-start">
-                                <div class="col-lg-8">
-                                    <div class="block block-image-holder">
-                                        <div class="block-image">
-                                            <%= image_tag("prv/shop/electronics/img-promo-wide-1.jpg", :alt => "" , :class => "img-fluid")%>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="feature feature--boxed-border floating-content floating-content--2 float--left top-0 mt--100 feature--bg-1 z-depth-2-top">
-                                        <div class="py-4 px-3">
-                                            <h2 class="heading heading-3 strong-600">
-                                                Dreaming in Colors
-                                            </h2>
-                                            <span class="clearfix"></span>
-                                            <p class="mt-4 line-height-1_8">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            </p>
-
-                                            <div class="btn-container mt-4">
-                                                <a href="#" class="btn btn-lg btn-gray-dark btn-circle px-4">Explore</a>
-                                                <a href="#" class="btn btn-lg btn-base-1 btn-circle btn-icon-left px-4">
-                                                    <i class="icon ion-bag"></i> Buy now
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
--->
-                    <section class="slice sct-color-2">
-                        <div class="container">
-                            <div class="section-title section-title--style-1 text-center">
-                                <h3 class="section-title-inner heading-3 strong-600 text-capitalize">
-                                    <span>Articles les plus appréciés</span>
-                                </h3>
-                            </div>
-
-                            <div class="row cols-xs-space cols-sm-space cols-md-space">
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <%= image_tag("boitier/LEICA-V-LUX.jpg", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Leica V-Lux-7
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                            <%= image_tag("objectif/sigma-35mm-f14-dg-hsm.jpg", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Sigma 35 f1.4
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                Léger et ultra lumineux, cet objectif sera votre compagnon idéal sur le terrain
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                            <%= image_tag("objectif/canon-ef-50mm-f12-l-usm.jpg", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Canon 50 mm f1.2
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                léger et compact ...
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                            <%= image_tag("eclairage/canon-speedlite-600.png", :alt => "" , :class => "img-center")%>
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Canon speedlite 600
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="slice sct-color-2">
-                    <div class="container">
-                        <div class="section-title section-title--style-1 text-center">
-                            <h3 class="section-title-inner heading-3 strong-600 text-capitalize">
-                                <span>Nos utilisateurs les mieux notés</span>
-                            </h3>
-                        </div>
-
-                        <div class="row cols-xs-space cols-sm-space cols-md-space">
-                            <div class="col-lg-3">
-                                <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                    <div class="block-image">
-                                        <a href="#">
-                                            <%= image_tag("boitier/LEICA-V-LUX.jpg", :alt => "" , :class => "img-center")%>
-                                        </a>
-                                        <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                    </div>
-
-                                    <div class="block-body text-center">
-                                        <h3 class="heading heading-5 strong-600 text-capitalize">
-                                            <a href="#">
-                                                Leica V-Lux-7
-                                            </a>
-                                        </h3>
-                                        <p class="product-description">
-                                            2.8GHz Processor 1TB Storage 16GB DDR
-                                        </p>
-                                        <div class="product-colors mt-2">
-                                            <div class="color-switch float-wrapper">
-                                                <a href="#" class="bg-purple"></a>
-                                                <a href="#" class="bg-pink"></a>
-                                                <a href="#" class="bg-blue"></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-buttons mt-4">
-                                            <div class="row align-items-center">
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                        <i class="ion-ios-heart"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                        <i class="ion-ios-browsers-outline"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-8">
-                                                    <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                        <i class="icon ion-android-cart"></i>Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3">
-                                <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                    <div class="block-image">
-                                        <a href="#">
-                                        <%= image_tag("objectif/sigma-35mm-f14-dg-hsm.jpg", :alt => "" , :class => "img-center")%>
-                                        </a>
-                                        <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                    </div>
-
-                                    <div class="block-body text-center">
-                                        <h3 class="heading heading-5 strong-600 text-capitalize">
-                                            <a href="#">
-                                                Sigma 35 f1.4
-                                            </a>
-                                        </h3>
-                                        <p class="product-description">
-                                            Léger et ultra lumineux, cet objectif sera votre compagnon idéal sur le terrain
-                                        </p>
-                                        <div class="product-colors mt-2">
-                                            <div class="color-switch float-wrapper">
-                                                <a href="#" class="bg-purple"></a>
-                                                <a href="#" class="bg-pink"></a>
-                                                <a href="#" class="bg-blue"></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-buttons mt-4">
-                                            <div class="row align-items-center">
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                        <i class="ion-ios-heart"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                        <i class="ion-ios-browsers-outline"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-8">
-                                                    <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                        <i class="icon ion-android-cart"></i>Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3">
-                                <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                    <div class="block-image">
-                                        <a href="#">
-                                        <%= image_tag("objectif/canon-ef-50mm-f12-l-usm.jpg", :alt => "" , :class => "img-center")%>
-                                        </a>
-                                        <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                    </div>
-
-                                    <div class="block-body text-center">
-                                        <h3 class="heading heading-5 strong-600 text-capitalize">
-                                            <a href="#">
-                                                Canon 50 mm f1.2
-                                            </a>
-                                        </h3>
-                                        <p class="product-description">
-                                            léger et compact ...
-                                        </p>
-                                        <div class="product-colors mt-2">
-                                            <div class="color-switch float-wrapper">
-                                                <a href="#" class="bg-purple"></a>
-                                                <a href="#" class="bg-pink"></a>
-                                                <a href="#" class="bg-blue"></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-buttons mt-4">
-                                            <div class="row align-items-center">
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                        <i class="ion-ios-heart"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                        <i class="ion-ios-browsers-outline"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-8">
-                                                    <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                        <i class="icon ion-android-cart"></i>Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3">
-                                <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                    <div class="block-image">
-                                        <a href="#">
-                                        <%= image_tag("eclairage/canon-speedlite-600.png", :alt => "" , :class => "img-center")%>
-                                        </a>
-                                        <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                    </div>
-
-                                    <div class="block-body text-center">
-                                        <h3 class="heading heading-5 strong-600 text-capitalize">
-                                            <a href="#">
-                                                Canon speedlite 600
-                                            </a>
-                                        </h3>
-                                        <p class="product-description">
-                                            2.8GHz Processor 1TB Storage 16GB DDR
-                                        </p>
-                                        <div class="product-colors mt-2">
-                                            <div class="color-switch float-wrapper">
-                                                <a href="#" class="bg-purple"></a>
-                                                <a href="#" class="bg-pink"></a>
-                                                <a href="#" class="bg-blue"></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-buttons mt-4">
-                                            <div class="row align-items-center">
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                        <i class="ion-ios-heart"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-2">
-                                                    <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                        <i class="ion-ios-browsers-outline"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="col-8">
-                                                    <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                        <i class="icon ion-android-cart"></i>Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      </div>
+                      <a href="#" class="close-search" data-toggle="global-search" title="Close search bar"></a>
+                    </form>
+                  </div>
                 </section>
 
-                    <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/prv/architecture/img-slider-1.jpg);">
+                <!-- Navbar -->
+                <nav class="navbar navbar-transparent navbar-expand-lg navbar--bold navbar--style-2 navbar-light bg-default  navbar--shadow fixed-top">
+                  <div class="container navbar-container">
+                    <!-- Brand/Logo -->
+                    <a class="navbar-brand" href="">
+                      <%= image_tag("logo/logo-1-d.png", :alt => "pixeloo" , :class => "img-fluid main-img")%>
+                    </a>
+
+                    <div class="d-inline-block">
+                      <!-- Navbar toggler -->
+                      <button class="navbar-toggler hamburger hamburger-js hamburger--spring" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbar_main">
+                      <!-- Navbar search - For small resolutions -->
+                      <div class="navbar-search-widget b-xs-bottom py-3 d-lg-none d-none">
+                        <form class="" role="form">
+                          <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                              <button class="btn btn-base-3" type="button">Go!</button>
+                            </span>
+                          </div>
+                        </form>
+                      </div>
+
+                      <!-- Navbar links -->
+
+                      <ul class="navbar-nav ml-lg-auto">
+                        <% if user_signed_in? %>
+                          <li class="nav-item"><%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete, class: "nav-perso"%></li>
+                        <% else %>
+                          <li class="nav-item"><%= link_to 'Se connecter', new_user_session_path, class: "nav-perso" %></li>
+                          <li class="nav-item"><%= link_to 'Créer un compte', new_user_registration_path, class: "nav-perso" %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+
+                    <div class=" d-none d-lg-inline-block d-xl-inline-block">
+                      <ul class="navbar-nav ml-auto" data-hover="dropdown">
+                        <li class="nav-item nav-item-icon hidden-md-down">
+                          <a href="#" class="nav-link btn-st-trigger" data-effect="st-effect-1">
+                            <span>
+                              <i class="fa fa-bars"></i>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </nav>
+              </div>
+
+              <!-- REVOLUTION SLIDER -->
+              <div id="rev_slider_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="image-hero39" data-source="gallery">
+                <!-- START REVOLUTION SLIDER 5.3.0.2 fullwidth mode -->
+                <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
+                  <ul>
+                    <li
+                      data-index="rs-1"
+                      data-transition="slidevertical"
+                      data-slotamount="1"
+                      data-hideafterloop="0"
+                      data-hideslideonmobile="off"
+                      data-easein="default"
+                      data-easeout="default"
+                      data-masterspeed="1500"
+                      data-thumb="../../images/slider/concept-1-100x50.jpg"
+                      data-rotate="0"
+                      data-fstransition="fade"
+                      data-fsmasterspeed="1500"
+                      data-fsslotamount="7"
+                      data-saveperformance="off"
+                      data-title="Intro"
+                      data-param1=""
+                      data-param2=""
+                      data-param3=""
+                      data-param4=""
+                      data-param5=""
+                      data-param6=""
+                      data-param7=""
+                      data-param8=""
+                      data-param9=""
+                      data-param10=""
+                      data-description="">
+                      <!-- MAIN IMAGE -->
+                      <%= image_tag("slider/iphone-1.jpg", :alt => "" , :class => "rev-slidebg")%>
+                      <!-- LAYER NR. 2 -->
+                      <div
+                        class="tp-caption title--style-1 c-white tp-resizeme"
+                        id="slide-1-layer-2"
+                        data-x="['right','right','right','right']"
+                        data-hoffset="['0','0','50','50']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-voffset="['0','0','0','0']"
+                        data-fontsize="['16','16','16','16']"
+                        data-lineheight="['16','16','16','16']"
+                        data-width="[300, 300, 300, 300]"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                        data-textalign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; white-space: nowrap;text-transform:left;">
+
+                        <span class="text-uppercase strong-400">No more waiting</span>
+
+                      </div>
+
+                      <div
+                        class="tp-caption title--style-1 c-white tp-resizeme"
+                        id="slide-1-layer-3"
+                        data-x="['right','right','right','right']"
+                        data-hoffset="['0','0','50','50']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-voffset="['70','70','70','70']"
+                        data-fontsize="['40','40','40','40']"
+                        data-lineheight="['50','40','40','40']"
+                        data-width="[300, 300, 300, 300]"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                        data-textalign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; white-space: nowrap;text-transform:left;">
+
+                        <span class="strong-400">
+                          Say hello to
+                        </span>
+                        <br>
+                        <span class="strong-600">
+                          the new iPhone X
+                        </span>
+
+                      </div>
+
+                      <!-- LAYER NR. 5 -->
+                      <div
+                        class="tp-caption"
+                        id="slide-1-layer-5"
+                        data-x="['right','right','right','right']"
+                        data-hoffset="['0','0','50','50']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-voffset="['180','180','180','180']"
+                        data-fontsize="['40','40','40','40']"
+                        data-lineheight="['50','50','50','50']"
+                        data-width="[300, 300, 300, 300]"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                        data-textalign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; white-space: nowrap;text-transform:left;">
+
+                        <a href="#" class="btn btn-base-1 btn-circle">Rent now</a>
+
+                      </div>
+                    </li>
+
+                    <!-- SLIDE 2 -->
+                    <li
+                      data-index="rs-2"
+                      data-transition="slidevertical"
+                      data-slotamount="1"
+                      data-hideafterloop="0"
+                      data-hideslideonmobile="off"
+                      data-easein="default"
+                      data-easeout="default"
+                      data-masterspeed="1500"
+                      data-thumb="../../images/slider/concept-1-100x50.jpg"
+                      data-rotate="0"
+                      data-fstransition="fade"
+                      data-fsmasterspeed="1500"
+                      data-fsslotamount="7"
+                      data-saveperformance="off"
+                      data-title="Intro"
+                      data-param1=""
+                      data-param2=""
+                      data-param3=""
+                      data-param4=""
+                      data-param5=""
+                      data-param6=""
+                      data-param7=""
+                      data-param8=""
+                      data-param9=""
+                      data-param10=""
+                      data-description="">
+                      <!-- MAIN IMAGE -->
+                      <%= image_tag("slider/macbook-1.jpg", :alt => "" , :class => "rev-slidebg")%>
+                      <!-- LAYER NR. 2 -->
+                      <div
+                        class="tp-caption title--style-1 c-white tp-resizeme"
+                        id="slide-2-layer-2"
+                        data-x="['right','right','right','right']"
+                        data-hoffset="['0','0','50','50']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-voffset="['0','0','0','0']"
+                        data-fontsize="['16','16','16','16']"
+                        data-lineheight="['16','16','16','16']"
+                        data-width="[300, 300, 300, 300]"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                        data-textalign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; white-space: nowrap;text-transform:left;">
+
+                        <span class="text-uppercase strong-400">It's here</span>
+
+                      </div>
+
+                      <div
+                        class="tp-caption title--style-1 c-white tp-resizeme"
+                        id="slide-2-layer-3"
+                        data-x="['right','right','right','right']"
+                        data-hoffset="['0','0','50','50']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-voffset="['70','70','70','70']"
+                        data-fontsize="['40','40','40','40']"
+                        data-lineheight="['50','40','40','40']"
+                        data-width="[300, 300, 300, 300]"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                        data-textalign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; white-space: nowrap;text-transform:left;">
+
+                        <span class="strong-400">
+                          A ne pas manquer
+                        </span>
+                        <br>
+                        <span class="strong-600">
+                          Offre promotionelle
+                        </span>
+                        <br>
+                        <span class="strong-400">
+                          sur ce produit
+                        </span>
+
+                      </div>
+
+                      <!-- LAYER NR. 5 -->
+                      <div
+                        class="tp-caption"
+                        id="slide-2-layer-5"
+                        data-x="['right','right','right','right']"
+                        data-hoffset="['0','0','50','50']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-voffset="['180','180','180','180']"
+                        data-fontsize="['40','40','40','40']"
+                        data-lineheight="['50','50','50','50']"
+                        data-width="[300, 300, 300, 300]"
+                        data-height="none"
+                        data-whitespace="nowrap"
+                        data-type="text"
+                        data-responsive_offset="on"
+                        data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                        data-textalign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; white-space: nowrap;text-transform:left;">
+
+                        <a href="#" class="btn btn-base-1 btn-circle">Rent now</a>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+              </div>
+              <!-- END REVOLUTION SLIDER -->
+
+              <section class="slice sct-color-2">
+                <div class="container">
+                  <div class="section-title section-title--style-1 text-center">
+                    <h3 class="section-title-inner heading-3 strong-600 text-capitalize">
+                      <span>Catégories principales</span>
+                    </h3>
+                  </div>
+                  <div class="row cols-xs-space cols-sm-space cols-md-space">
+                    <% @categories.each do |category| %>
+                      <div class="col-lg-4">
+                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                          <div class="block-image">
+                            <a href="#">
+                              <%= link_to(image_tag(category.image_url, :alt => "" , :class => "img-center"), category_items_path(category_id: category.id))%>
+                            </a>
+                          </div>
+
+                          <div class="block-body text-center">
+                            <h3 class="heading heading-5 strong-600 text-capitalize">
+                              <a href="">
+                                <%= link_to(category.name, category_items_path(category_id: category.id)) %>
+                              </a>
+                            </h3>
+                            <p class="product-description">
+                              <%= truncate(category.description, lenght: 7, separator: ' ') %>
+                            </p>
+                            <div class="product-colors mt-2">
+                              <div class="color-switch float-wrapper"></div>
+                            </div>
+                            <div class="product-buttons mt-4">
+                              <%= link_to 'Explorer', category_items_path(category_id: category.id), class: "btn btn-gray-dark btn-circle px-4" %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <% end %>
+                  </section>
+
+                  <section class="slice sct-color-2">
+                    <div class="container">
+                      <div class="section-title section-title--style-1 text-center">
+                        <h3 class="section-title-inner heading-3 strong-600 text-capitalize">
+                          <span>Articles les plus appréciés</span>
+                        </h3>
+                      </div>
+                      <div class="row cols-xs-space cols-sm-space cols-md-space">
+                        <% @item_sample.each do |item| %>
+                          <div class="col-lg-3">
+                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                              <div class="block-image">
+                                <a href="#">
+                                  <%= image_tag(item.image_url, :alt => "" , :class => "img-center")%>
+                                </a>
+                              </div>
+                              <div class="block-body text-center">
+                                <h3 class="heading heading-5 strong-600 text-capitalize">
+                                  <a href="#">
+                                    <%= item.title %>
+                                  </a>
+                                </h3>
+                                <p class="product-description">
+                                  <%= truncate(item.description, lenght: 7, separator: ' ') %>
+                                </p>
+                                <div class="product-colors mt-2">
+                                  <div class="color-switch float-wrapper"></div>
+                                </div>
+                                <div class="product-buttons mt-4">
+                                  <div class="row align-items-center">
+
+                                    <div class="col-12">
+                                      <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
+                                        <i class="icon ion-android-cart"></i>Add to cart
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <% end %>
+                      </section>
+
+                      <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/prv/architecture/img-slider-1.jpg);">
                         <div class="mask mask-base-1--style-1"></div>
                         <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-6 text-center">
-                                    <h2 class="heading heading-1 strong-600 c-white">
-                                        Ici on mettra des témoignages par exemple
-                                    </h2>
-                                    <p class="c-white trong-300 mt-4">
-                                        Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only.
-                                    </p>
-
-                                    <div class="btn-container mt-5">
-                                        <a href="#" class="btn btn-styled btn-white btn-outline btn-circle px-5">Learn more</a>
-                                    </div>
-                                </div>
+                          <div class="row justify-content-center">
+                            <div class="col-6 text-center">
+                              <h2 class="heading heading-1 strong-600 c-white">
+                                Rejoignez la communauté !
+                              </h2>
+                              <p class="c-white trong-300 mt-4">
+                                Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only.
+                              </p>
+                              <div class="btn-container mt-5">
+                                <%= link_to "Nous rejoindre", new_user_registration_path, class:"btn btn-styled btn-white btn-outline btn-circle px-5" %>
+                              </div>
                             </div>
+                          </div>
                         </div>
-                    </section>
-    <!--
-                    <section class="slice sct-color-1">
+                      </section>
+
+                      <section class="slice sct-color-1">
                         <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 ml-lg-auto order-lg-2">
-                                    <img src="../../assets/images/prv/shop/electronics/img-product-lg-1.jpg" class="img-fluid">
-                                </div>
-
-                                <div class="col-lg-5 order-lg-1">
-                                    <div class="">
-                                        <h3 class="heading heading-2 strong-600">The most beautiful colors you've ever seen</h3>
-
-                                        <p class=" c-gray-light mt-4">
-                                            There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only.
-                                        </p>
-
-                                        <div class="btn-container mt-5">
-                                            <a href="#" class="btn btn-base-1 btn-circle btn-icon-left px-4" data-scroll-to="#scrollToSection">
-                                                <i class="icon ion-android-cart"></i> Add to cart
-                                            </a>
-                                            <a href="#" class="btn btn-base-3 btn-circle btn-icon-left px-4" data-scroll-to="#scrollToSection">
-                                                Learn more
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                          <div class="row align-items-center">
+                            <div class="col-lg-6 ml-lg-auto order-lg-2">
+                              <%= image_tag("backgrounds/nikon-lens-zoom.jpg", class:"img-fluid") %>
                             </div>
-                        </div>
-                    </section>
-    -->
-                    <section class="slice sct-color-2">
-                        <div class="container">
-                            <div class="section-title section-title--style-1 text-center">
-                                <h3 class="section-title-inner heading-3 strong-600 text-capitalize">
-                                    <span>Vos dernières locations</span>
-                                </h3>
+                            <div class="col-lg-5 order-lg-1">
+                              <div class="">
+                                <h3 class="heading heading-2 strong-600">The most beautiful colors you've ever seen</h3>
+                                <p class=" c-gray-light mt-4">
+                                  There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only.
+                                </p>
+                                <div class="btn-container mt-5">
+                                  <a href="#" class="btn btn-base-1 btn-circle btn-icon-left px-4" data-scroll-to="#scrollToSection">
+                                    <i class="icon ion-android-cart"></i>
+                                    Add to cart
+                                  </a>
+                                  <a href="#" class="btn
+                        btn-base-3 btn-circle btn-icon-left px-4" data-scroll-to="#scrollToSection">
+                                    Learn more
+                                  </a>
+                                </div>
+                              </div>
                             </div>
-
-                            <div class="row cols-xs-space cols-sm-space cols-md-space">
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <img src="../../assets/images/prv/shop/electronics/img-1.png" class="img-center">
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Google Home Base
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <img src="../../assets/images/prv/shop/electronics/img-2.png" class="img-center">
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Google Home
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <img src="../../assets/images/prv/shop/electronics/img-3.png" class="img-center">
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Libratone Q Adapt
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                        <div class="block-image">
-                                            <a href="#">
-                                                <img src="../../assets/images/prv/shop/electronics/img-3.png" class="img-center">
-                                            </a>
-                                            <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">New</span>
-                                        </div>
-
-                                        <div class="block-body text-center">
-                                            <h3 class="heading heading-5 strong-600 text-capitalize">
-                                                <a href="#">
-                                                    Libratone Q Adapt
-                                                </a>
-                                            </h3>
-                                            <p class="product-description">
-                                                2.8GHz Processor 1TB Storage 16GB DDR
-                                            </p>
-                                            <div class="product-colors mt-2">
-                                                <div class="color-switch float-wrapper">
-                                                    <a href="#" class="bg-purple"></a>
-                                                    <a href="#" class="bg-pink"></a>
-                                                    <a href="#" class="bg-blue"></a>
-                                                </div>
-                                            </div>
-                                            <div class="product-buttons mt-4">
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                            <i class="ion-ios-heart"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                            <i class="ion-ios-browsers-outline"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                                            <i class="icon ion-android-cart"></i>Add to cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
-                    </section>
+                      </section>
 
-                    <section class="slice-sm bg-base-1">
-                        <div class="container sct-inner">
-                            <div class="row cols-xs-space cols-sm-space cols-md-space">
-                                <div class="col-lg-4 b-lg-right b-inverse">
-                                    <div class="px-3 py-3 text-lg-center">
-                                        <h3 class="heading heading-sm c-base-text-1 strong-600 text-uppercase ls-1">Free shipping in 48/72H</h3>
-                                        <p class="c-white alpha-8 line-height-1_6">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 b-lg-right b-inverse">
-                                    <div class="px-3 py-3 text-lg-center">
-                                        <h3 class="heading heading-sm c-base-text-1 strong-600 text-uppercase ls-1">Free returns</h3>
-                                        <p class="c-white alpha-8 line-height-1_6">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="px-3 py-3 text-lg-center">
-                                        <h3 class="heading heading-sm c-base-text-1 strong-600 text-uppercase ls-1">Secure payment</h3>
-                                        <ul class="inline-links mt-2">
-                                            <li>
-                                                <img src="../../assets/images/icons/cards/visa.png" width="30" class="img-grayscale">
-                                            </li>
-                                            <li>
-                                                <img src="../../assets/images/icons/cards/mastercard.png" width="30" class="img-grayscale">
-                                            </li>
-                                            <li>
-                                                <img src="../../assets/images/icons/cards/maestro.png" width="30" class="img-grayscale">
-                                            </li>
-                                            <li>
-                                                <img src="../../assets/images/icons/cards/paypal.png" width="30" class="img-grayscale">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- FOOTER -->
-                    <footer id="footer" class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row cols-xs-space cols-sm-space cols-md-space">
-                <div class="col-lg-5">
-                    <div class="col">
-                        <img src="../../assets/images/logo/logo-1-c.png">
-                        <span class="clearfix"></span>
-                        <span class="heading heading-sm c-gray-light strong-400">One template. Infinite solutions.</span>
-                        <p class="mt-3">
-                            All the components included in Boomerang are built to the same level of quality as Bootstrap and highlighted with several example pages.
-                        </p>
-
-                        <div class="copyright mt-4">
-                            <p>
-                                Copyright &copy; 2018                                <a href="https://webpixels.io" target="_blank">
-                                    <strong>Webpixels</strong>
-                                </a> -
-                                All rights reserved
-                            </p>
-                        </div>
                     </div>
+                  </div>
                 </div>
-
-                <div class="col-lg-2">
-                    <div class="col">
-                       <h4 class="heading heading-xs strong-600 text-uppercase mb-1">
-                           Support
-                       </h4>
-
-                       <ul class="footer-links">
-                            <li><a href="#" title="Help center">Help center</a></li>
-                            <li><a href="#" title="Discussions">Discussions</a></li>
-                            <li><a href="#" title="Contact support">Contact</a></li>
-                            <li><a href="#" title="Blog">Blog</a></li>
-                            <li><a href="#" title="Jobs">FAQ</a></li>
-                        </ul>
-                     </div>
-                </div>
-
-                <div class="col-lg-2">
-                    <div class="col">
-                        <h4 class="heading heading-xs strong-600 text-uppercase mb-1">
-                            Company
-                        </h4>
-
-                        <ul class="footer-links">
-                             <li>
-                                 <a href="#" title="Home">
-                                     Home
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#" title="About us">
-                                     About us
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#" title="Services">
-                                     Services
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#" title="Blog">
-                                     Blog
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#" title="Contact">
-                                     Contact
-                                 </a>
-                             </li>
-                         </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="col">
-                        <h4 class="heading heading-xs strong-600 text-uppercase mb-1">
-                            Get in touch
-                        </h4>
-
-                        <ul class="social-media social-media--style-1-v4">
-                            <li>
-                                <a href="#" class="facebook" target="_blank" data-toggle="tooltip" data-original-title="Facebook">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="instagram" target="_blank" data-toggle="tooltip" data-original-title="Instagram">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dribbble" target="_blank" data-toggle="tooltip" data-original-title="Dribbble">
-                                    <i class="fa fa-dribbble"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dribbble" target="_blank" data-toggle="tooltip" data-original-title="Github">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- END: st-pusher -->
+              </div>
+              <!-- END: st-container -->
             </div>
-        </div>
-    </div>
-</footer>
-                </div>
-            </div>
-        </div><!-- END: st-pusher -->
-    </div><!-- END: st-container -->
-</div><!-- END: body-wrap -->
+            <!-- END: body-wrap -->

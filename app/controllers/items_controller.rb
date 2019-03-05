@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
   before_action :set_current_cart
 
   def index
-    @items = Item.all.order(:id)
+    @items = Item.all
     @categories = Category.all
   end
 

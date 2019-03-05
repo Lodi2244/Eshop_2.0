@@ -10,6 +10,9 @@
 #  price       :float            not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  user_id     :bigint(8)
+#  address     :string
+#  city        :string
 #  image_url   :string
 #  category_id :bigint(8)
 #
