@@ -1,552 +1,185 @@
-<i class="icon ion-android-cart"></i>
-
 
 <section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset=".header">
     <div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="fade" data-swiper-items="1" data-swiper-space-between="0">
         <div class="swiper-wrapper">
-<!-- Slide -->
-<div class="swiper-slide" data-swiper-autoplay="10000">
-    <div class="holder-item slice sct-color-1 has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/prv/shop/electronics/img-bg-1.png); background-position: left center;">
-        <div class="container d-flex align-items-center">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6 holder-item-light">
-                    <div class="animated" data-animation-in="zoomIn" data-animation-delay="400">
-                        <h2 class="heading heading-xl strong-600 c-gray-dark mb-0">
-                          <% @items.sample(2) do |item| %>
-                          <%= item.title %>
-                        </h2>
-                        <div class="pr-5">
-                            <p class="c-gray-light mt-4">
-                              <%= item.description %>
-                            </p>
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="10000">
+                <div class="holder-item slice sct-color-1 has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/prv/shop/electronics/img-bg-1.png); background-position: left center;">
+                    <div class="container d-flex align-items-center">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6 holder-item-light">
+                                <div class="animated" data-animation-in="zoomIn" data-animation-delay="400">
+                                    <h2 class="heading heading-xl strong-600 c-gray-dark mb-0">
+                                      Boitiers 
+                                    </h2>
+                                    <h2 class="heading heading-2 strong-600 c-gray-light">
+                                        2.3GHz Processor 128GB Storage
+                                    </h2>
+                                    <div class="pr-5">
+                                        <p class="c-gray-light mt-4">
+                                            Now it's easy to boost your online image by creating a website using our theme without having to
+                                            worry about the quality of the end result.
+                                        </p>
 
-                            <span class="d-block heading-xs text-uppercase c-gray-light mt-4">Starting from:</span>
-                            <h2 class="heading heading-2 strong-600 c-base-1 mt-2">
-                                <%= item.price %>
-                            </h2>
+                                        <span class="d-block heading-xs text-uppercase c-gray-light mt-4">Starting from:</span>
+                                        <h2 class="heading heading-2 strong-600 c-base-1 mt-2">
+                                            $1,299.00
+                                        </h2>
 
-                            <div class="btn-container mt-4">
-                                <a href="#" class="btn btn-styled btn-base-1 btn-circle btn-icon-left" data-scroll-to="#scrollToSection">
-                                    <i class="icon ion-android-cart"></i>
-                                    <%= link_to "Rent now", category_item_path(item_id: item.id) %>
-                                    <% end %> 
-                                </a>
+                                        <div class="btn-container mt-4">
+                                            <a href="#" class="btn btn-styled btn-base-1 btn-circle btn-icon-left" data-scroll-to="#scrollToSection">
+                                                <i class="icon ion-android-cart"></i> Shop now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="block block-image-holder animated d-none d-lg-block" data-animation-in="slideInRight" data-animation-delay="200">
+                                    <div class="block-image">
+                                        <img src="../../assets/images/prv/shop/electronics/img-slider-1.png">
+
+                                        <a href="https://www.youtube.com/watch?v=zodT9bCdIiI" data-fancybox>
+                                            <span class="play-video play-video-sm">
+                                                <i class="fa fa-play"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-12 col-md-6">
-                    <div class="block block-image-holder animated d-none d-lg-block" data-animation-in="slideInRight" data-animation-delay="200">
-                        <div class="block-image">
-                          <%= image_tag("boitier/nikon D3500.png", :alt => "")%>
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="10000">
+                <div class="holder-item slice sct-color-1 has-bg-cover bg-size-cover" style="background-image: url(../../assets/images/prv/shop/electronics/img-bg-1.png); background-position: left center;">
+                    <div class="container d-flex align-items-center">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6 holder-item-light">
+                                <div class="animated" data-animation-in="zoomIn" data-animation-delay="400">
+                                    <h2 class="heading heading-xl strong-600 c-gray-dark mb-0">
+                                        Google Home
+                                    </h2>
+                                    <h2 class="heading heading-2 strong-600 c-gray-light">
+                                        Hands-free help from the Google Assistant
+                                    </h2>
+                                    <div class="pr-5">
+                                        <p class="c-gray-light mt-4">
+                                            Now it's easy to boost your online image by creating a website using our theme without having to
+                                            worry about the quality of the end result.
+                                        </p>
+
+                                        <span class="d-block heading-xs text-uppercase c-gray-light mt-4">Starting from:</span>
+                                        <h2 class="heading heading-2 strong-600 c-base-1 mt-2">
+                                            $129.00
+                                        </h2>
+
+                                        <div class="btn-container mt-4">
+                                            <a href="#" class="btn btn-styled btn-base-1 btn-circle btn-icon-left" data-scroll-to="#scrollToSection">
+                                                <i class="icon ion-android-cart"></i> Shop now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="block block-image-holder animated d-none d-lg-block" data-animation-in="slideInRight" data-animation-delay="200">
+                                    <div class="block-image">
+                                        <img src="../../assets/images/prv/shop/electronics/img-slider-2.png">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button swiper-button-next"></div>
+        <div class="swiper-button swiper-button-prev"></div>
     </div>
-</div>
-</div>
-
-<!-- Add Pagination -->
-<div class="swiper-pagination"></div>
-
-<!-- Add Arrows -->
-<div class="swiper-button swiper-button-next"></div>
-<div class="swiper-button swiper-button-prev"></div>
-</div>
 </section>
 
 <section class="slice sct-color-2">
-<div class="container">
-<h4 class="heading heading-xs text-uppercase strong-600 mb-0 text-center">
-Trending
-</h4>
-<div class="section-title section-title--style-1 text-center mt-1">
-<h3 class="section-title-inner heading-3 strong-600 line-height-1_6">
-    <span>Popular items</span>
-</h3>
-<span class="section-title-delimiter clearfix d-none"></span>
-</div>
+    <div class="container">
+        <h4 class="heading heading-xs text-uppercase strong-600 mb-0 text-center">
+            Trending
+        </h4>
+        <div class="section-title section-title--style-1 text-center mt-1">
+            <h3 class="section-title-inner heading-3 strong-600 line-height-1_6">
+                <span>Popular items</span>
+            </h3>
+            <span class="section-title-delimiter clearfix d-none"></span>
+        </div>
 
-<div class="row-wrapper">
-<div class="row cols-xs-space cols-sm-space cols-md-space">
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Google Home Base</a>
-                </h2>
+        <div class="row-wrapper">
+            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-product z-depth-1-top z-depth-2--hover">
+                        <div class="card-body">
+                            <h2 class="heading heading-6 strong-600 mt-2 mb-3">
+                                <a href="#">Google Home Base</a>
+                            </h2>
 
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-1.png" class="img-fluid img-center img-primary">
+                            <div class="card-image swiper-js-container">
+                                <div class="">
+                                    <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../../assets/images/prv/shop/electronics/img-1.png" class="img-fluid img-center img-primary">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../../assets/images/prv/shop/electronics/img-1.png" class="img-fluid img-center img-primary">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-1.png" class="img-fluid img-center img-primary">
+                            </div>
+
+                            <div class="mt-3">
+                                <div class="price-wrapper">
+                                    <span class="price price-sm c-gray-dark">
+                                        <span class="strong-300">$</span><span class="price-value strong-600">65.</span><small class="strong-300">00</small>
+                                    </span>
+                                    <span class="clearfix"></span>
+                                </div>
+                                <h6 class="heading heading-sm strong-400 c-red">Save 10%</h6>
+                                <p class="product-description mt-3 mb-0">
+                                    Customize your Google Home to fit into your space.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="product-buttons">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
+                                            <i class="ion-ios-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
+                                            <i class="ion-ios-browsers-outline"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-8">
+                                        <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
+                                            <i class="icon ion-android-cart"></i>Add to cart
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">65.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-red">Save 10%</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Google Home</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-2.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-2.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">129.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-green">In stock</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Libratone Q Adapt</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-3.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-3.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">245.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-gray-light">Limited stock</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Phone fabric case</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-4.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-4.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">29.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-red">Save 10%</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row cols-xs-space cols-sm-space cols-md-space">
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Google Pixel 2</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-5.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-5.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">699.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-red">Save 10%</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Google Chromecast</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-6.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-6.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">59.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-green">In stock</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Google Pixel Bud</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-7.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-7.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">245.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-gray-light">Limited stock</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-        <div class="card card-product z-depth-1-top z-depth-2--hover">
-            <div class="card-body">
-                <h2 class="heading heading-6 strong-600 mt-2 mb-3">
-                    <a href="#">Google Daydream View</a>
-                </h2>
-
-                <div class="card-image swiper-js-container">
-                    <div class="">
-                        <div class="swiper-container" data-swiper-items="1" data-swiper-space-between="0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-8.png" class="img-fluid img-center img-primary">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="../../assets/images/prv/shop/electronics/img-8.png" class="img-fluid img-center img-primary">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <div class="price-wrapper">
-                        <span class="price price-sm c-gray-dark">
-                            <span class="strong-300">$</span><span class="price-value strong-600">29.</span><small class="strong-300">00</small>
-                        </span>
-                        <span class="clearfix"></span>
-                    </div>
-                    <h6 class="heading heading-sm strong-400 c-red">Save 10%</h6>
-                    <p class="product-description mt-3 mb-0">
-                        Customize your Google Home to fit into your space.
-                    </p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="product-buttons">
-                    <div class="row align-items-center">
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Favorite">
-                                <i class="ion-ios-heart"></i>
-                            </button>
-                        </div>
-                        <div class="col-2">
-                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="Compare">
-                                <i class="ion-ios-browsers-outline"></i>
-                            </button>
-                        </div>
-                        <div class="col-8">
-                            <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
-                                <i class="icon ion-android-cart"></i>Add to cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
 
 <div class="pt-5">
 <nav aria-label="Product pagination">
@@ -565,6 +198,7 @@ Trending
 </div>
 </div>
 </section>
+
 
 <section class="slice pb-0 sct-color-1">
     <div class="container">

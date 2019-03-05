@@ -2,7 +2,7 @@
 
 class ItemsController < ApplicationController
   def index
-    @items = Item.all.order(:id)
+    @items = Item.all
     @categories = Category.all
   end
 
