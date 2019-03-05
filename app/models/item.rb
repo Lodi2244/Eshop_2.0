@@ -5,11 +5,16 @@
 # Table name: items
 #
 #  id          :bigint(8)        not null, primary key
-#  name        :string
-#  description :text
-#  price       :decimal(, )
+#  title       :string           not null
+#  description :text             not null
+#  price       :float            not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  user_id     :bigint(8)
+#  address     :string
+#  city        :string
+#  image_url   :string
+#  category_id :bigint(8)
 #
 
 class Item < ApplicationRecord

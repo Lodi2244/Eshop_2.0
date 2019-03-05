@@ -4,12 +4,12 @@
 #
 # Table name: orders
 #
-#  id         :bigint(8)        not null, primary key
-#  total      :decimal(, )      not null
-#  status     :integer          default(0)
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  user_id    :bigint(8)
+#  id          :bigint(8)        not null, primary key
+#  total_price :float
+#  status      :string
+#  user_id     :bigint(8)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
 #
 
 require 'rails_helper'
