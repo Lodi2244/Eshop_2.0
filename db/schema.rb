@@ -36,16 +36,6 @@ ActiveRecord::Schema.define(version: 2019_03_05_123753) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "carts", force: :cascade do |t|
-    t.integer "quantity"
-    t.bigint "user_id"
-    t.bigint "item_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_carts_on_item_id"
-    t.index ["user_id"], name: "index_carts_on_user_id"
-  end
-
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -60,7 +50,6 @@ ActiveRecord::Schema.define(version: 2019_03_05_123753) do
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["item_id", "order_id"], name: "index_item_orders_on_item_id_and_order_id", unique: true
     t.index ["item_id"], name: "index_item_orders_on_item_id"
     t.index ["order_id"], name: "index_item_orders_on_order_id"
   end
@@ -71,25 +60,14 @@ ActiveRecord::Schema.define(version: 2019_03_05_123753) do
     t.float "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.string "address"
-    t.string "city"
     t.string "image_url"
     t.bigint "category_id"
     t.index ["category_id"], name: "index_items_on_category_id"
-    t.index ["user_id"], name: "index_items_on_user_id"
-  end
-
-  create_table "items_orders", id: false, force: :cascade do |t|
-    t.bigint "item_id", null: false
-    t.bigint "order_id", null: false
-    t.index ["item_id", "order_id"], name: "index_items_orders_on_item_id_and_order_id"
-    t.index ["order_id", "item_id"], name: "index_items_orders_on_order_id_and_item_id"
   end
 
   create_table "orders", force: :cascade do |t|
     t.float "total_price"
-    t.string "status"
+    t.integer "status"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -118,9 +96,8 @@ ActiveRecord::Schema.define(version: 2019_03_05_123753) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "carts", "items"
-  add_foreign_key "carts", "users"
+  add_foreign_key "item_orders", "items"
+  add_foreign_key "item_orders", "orders"
   add_foreign_key "items", "categories"
-  add_foreign_key "items", "users"
   add_foreign_key "orders", "users"
 end
