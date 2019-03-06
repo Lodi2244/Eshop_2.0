@@ -21,9 +21,9 @@ h = "éclairage continu"
 
 Category.destroy_all
 
-Category.create!(name: "Reflex", description: "Appareil photo numérique de type reflex", id: 1)
-Category.create!(name: "Objectif", description: "optiques numériques de type zoom ou focale fixe", id: 2)
-Category.create!(name: "Eclairage", description: "Tout type d'éclairage artificiel adapté pour le studio ou pour l'extérieur", id: 3)
+Category.create!(name: "Reflex", description: "Appareil photo numérique de type reflex", id: 1, image_url: "categories/reflex.jpg")
+Category.create!(name: "Objectif", description: "Optiques numériques de type zoom ou focale fixe", id: 2, image_url: "categories/objectif.jpg")
+Category.create!(name: "Eclairage", description: "Tout type d'éclairage artificiel adapté pour le studio ou pour l'extérieur", id: 3, image_url: "categories/eclairage.jpg")
 
 Item.destroy_all
 

@@ -10,6 +10,9 @@
 #  price       :float            not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  user_id     :bigint(8)
+#  address     :string
+#  city        :string
 #  image_url   :string
 #  category_id :bigint(8)
 #
@@ -29,6 +32,6 @@ class Item < ApplicationRecord
     current_cart = current_user.carts.items
     current_cart << item
     flash[:success] = 'Item successfully added to cart!'
-    redirect_to item_path(params[:id])
+    redirect_to category_item_path(params[:id])
   end
 end

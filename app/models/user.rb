@@ -33,6 +33,7 @@ class User < ApplicationRecord
 
   has_many :orders, dependent: :destroy
 
+  # Authorize user to log in with either his email or username
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
 
