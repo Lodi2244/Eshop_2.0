@@ -3,10 +3,10 @@
   <div class="container navbar-container">
     <!-- Brand/Logo -->
     <a class="navbar-brand" href="">
-      <%= image_tag('logo/logo.png') %>
+      <%= link_to(image_tag('logo/logo.png'), root_path) %>
     </a>
     <!-- Navbar links -->
-    <ul class="navbar-nav">
+    <ul class="nav-perso navbar-nav">
       <% if user_signed_in? %>
         <li>
           <%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete, class: "nav-perso nav-item btn btn-base-1 btn-outline btn-circle" %></li>

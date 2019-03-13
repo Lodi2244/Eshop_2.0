@@ -33,21 +33,4 @@
  */
 
 
- .nav-perso {
-   position: relative;
-   letter-spacing: 0;
-   background: transparent;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   border-radius: 0;
-   color: #fff;
- }
-
- a.nav-link.btn-base-1.btn-outline.btn-circle.nav-perso {
-   padding: 5px 10px 5px 10px;
- }
-
- a.nav-link.btn.btn-block.btn-base-1.btn-circle.nav-perso {
-   padding: 5px 10px 5px 10px;
-   background-color: #3452ff;
- }
+ @import "custom_style.scss";
