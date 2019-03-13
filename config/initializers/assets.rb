@@ -15,6 +15,7 @@ Rails.application.config.assets.paths << Rails.root.join('slidebar')
 Rails.application.config.assets.paths << Rails.root.join('revolution')
 Rails.application.config.assets.paths << Rails.root.join('revolution-slider')
 Rails.application.config.assets.paths << Rails.root.join('images')
+Rails.application.config.assets.paths << Rails.root.join('icons')
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

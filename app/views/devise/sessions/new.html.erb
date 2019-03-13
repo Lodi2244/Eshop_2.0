@@ -1,5 +1,5 @@
 <div class="body-wrap">
-  <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url('../../assets/images/backgrounds/slider/img-45.jpg'); background-position: bottom center;">
+  <section class="slice-lg has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path 'backgrounds/slider/image-photo.png' %>); background-position: bottom center;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -15,7 +15,6 @@
                                     Sign in to your account
                                   </h5>
                                 </div>
-                                <form class="form-default" role="form">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="form-group">
@@ -47,7 +46,6 @@
     <%= f.submit "Sign in", class: "btn btn-styled btn-lg btn-block btn-base-1 mt-4" %>
 <% end %>
 
-</form>
 </div>
 </div>
 
