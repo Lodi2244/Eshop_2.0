@@ -32,7 +32,7 @@ module Users
   def destroy
     super
   end
-end
+
 # GET /resource/cancel
 # Forces the session data which is usually expired after sign
 # in to be expired now. This is useful if the user wants to
@@ -42,7 +42,7 @@ end
 #   super
 # end
 
-private
+protected
 
 # If you have extra params to permit, append them to the sanitizer.
 def configure_sign_up_params
@@ -53,7 +53,7 @@ end
  def configure_account_update_params
    devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
  end
-
+end
 # The path used after sign up.
 # def after_sign_up_path_for(resource)
 #   super(resource)
