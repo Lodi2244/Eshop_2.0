@@ -12,7 +12,16 @@ a.nav-link.btn-base-1.btn-outline.btn-circle.nav-perso {
   padding: 5px 10px 5px 10px;
 }
 
+/* a.nav-link.btn-base-1.btn-outline.btn-circle.nav-perso:hover {
+  color: #050100 !important;
+} */
+
+
 a.nav-link.btn.btn-block.btn-base-1.btn-circle.nav-perso {
   padding: 5px 10px 5px 10px;
   background-color: #3452ff;
+}
+
+div.tp-bannertimer.tp-bottom {
+  visibility: hidden !important;
 }
