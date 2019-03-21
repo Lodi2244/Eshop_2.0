@@ -30,7 +30,6 @@
  *= require linea/ecommerce/linea-icons
  *= require linea/software/linea-icons
 
+ *= require custom_style
+
  */
-
-
- @import "custom_style.scss";
