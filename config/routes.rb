@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :items
   resources :carts, only: %i[show update destroy]
-  resources :home, only: %i[index] 
+  resources :home, only: %i[index]
 
   resources :categories do
     resources :items, only: %i[index show]
