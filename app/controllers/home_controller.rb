@@ -6,6 +6,4 @@ class HomeController < ApplicationController
     @items = Item.all
     @item_sample = @items.sample(4)
   end
-
-  def test; end
 end

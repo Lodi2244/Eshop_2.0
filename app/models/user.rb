@@ -32,7 +32,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable
 
   has_many :orders, dependent: :destroy
-
+  # rubocop:disable Rails/FindBy
   # Authorize user to log in with either his email or username
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
@@ -43,4 +43,5 @@ class User < ApplicationRecord
       where(conditions.to_hash).first
     end
   end
+  # rubocop:enable Rails/FindBy
 end

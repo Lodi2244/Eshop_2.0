@@ -22,5 +22,5 @@ module Users
     def configure_sign_in_params
       devise_parameter_sanitizer.permit(:sign_in, keys: %i[login password password_confirmation])
     end
- end
+  end
 end
