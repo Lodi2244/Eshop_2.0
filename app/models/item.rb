@@ -23,12 +23,4 @@ class Item < ApplicationRecord
   belongs_to :category, optional: true
   has_many :item_orders, dependent: :destroy
   has_many :orders, through: :item_orders
-
-  def add_to_cart
-    item = Item.find(item_id)
-    current_cart = current_user.carts.items
-    current_cart << item
-    flash[:success] = 'Item successfully added to cart!'
-    redirect_to category_item_path(params[:id])
-  end
 end
