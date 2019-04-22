@@ -32,6 +32,8 @@ class User < ApplicationRecord
   has_many :orders, dependent: :destroy
   has_one :profile, dependent: :destroy
 
+  after_create :bind_profile
+
   def login
     @login || username || email
   end
@@ -47,4 +49,10 @@ class User < ApplicationRecord
     end
   end
   # rubocop:enable Rails/FindBy
+
+  private
+
+  def bind_profile
+    create_profile
+  end
 end

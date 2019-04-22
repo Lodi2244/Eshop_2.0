@@ -14,9 +14,9 @@
 #
 
 class Profile < ApplicationRecord
-  validates :first_name, presence: true
-  validates :last_name, presence: true
-  validates :address, presence: true
+  validates :first_name, presence: true, on: :update
+  validates :last_name, presence: true, on: :update
+  validates :address, presence: true, on: :update
 
   belongs_to :user
 end
