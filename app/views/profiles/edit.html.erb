@@ -1,0 +1,13 @@
+<h1>Profile#Edit</h1>
+<p><%= @profile %></p>
+<p><%= @profile.first_name %></p>
+<p><%= @profile.last_name %></p>
+<p><%= @profile.address %></p>
+
+
+<%= form_for @profile do |f| %>
+  <%= f.text_field :first_name %>
+  <%= f.text_field :last_name %>
+  <%= f.text_field :address %>
+  <%= f.submit %>
+<% end %>

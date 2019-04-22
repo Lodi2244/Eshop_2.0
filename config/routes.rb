@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :items
   resources :carts, only: %i[show update destroy]
   resources :home, only: %i[index]
+  resource :profile, only: %i[show edit update]
 
   resources :categories do
     resources :items, only: %i[index show]
