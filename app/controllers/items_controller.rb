@@ -2,7 +2,6 @@
 
 class ItemsController < ApplicationController
   include Cart
-  before_action :set_current_cart
 
   def index
     @items = Item.all
@@ -10,8 +9,9 @@ class ItemsController < ApplicationController
   end
 
   def show
-    p @item = Item.find(params[:id])
-    p @category = Category.find(params[:id])
+    @item = Item.find(params[:id])
+    @category = Category.find(params[:category_id])
+    @cart = current_cart
   end
 
   def new
@@ -50,9 +50,5 @@ class ItemsController < ApplicationController
 
   def item_params
     params.require(:items).permit(:title, :description, :price, :category_id, :image_url, :user_id)
-  end
-
-  def set_current_cart
-    @cart = current_cart
   end
 end

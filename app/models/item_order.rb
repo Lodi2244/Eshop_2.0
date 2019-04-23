@@ -21,14 +21,13 @@ class ItemOrder < ApplicationRecord
 
   private
 
-  # def self.add_to_cart(order, _item_id)
-  #   if order.items.include?(item)
-  #     current_cart = current_user.orders.items
-  #     current_cart << item
-  #     flash[:success] = 'Item successfully added to cart!'
-  #     redirect_to category_item_path(params[:id])
-  #   end
-  # end
+  def add_to_cart
+    item = Item.find(params[:id])
+    current_cart = current_user.orders.items
+    current_cart << item
+    flash[:success] = 'Item successfully added to cart!'
+    redirect_to category_item_path(params[:id])
+  end
 
   def total_price
     total_price = []
