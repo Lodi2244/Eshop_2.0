@@ -3,7 +3,7 @@
 class ProfilesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_profile
-
+  layout 'profile-layout'
   def show; end
 
   def edit; end

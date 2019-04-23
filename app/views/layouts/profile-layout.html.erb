@@ -1,0 +1,75 @@
+<% content_for :layout do %>
+<section class="slice-sm sct-color-1">
+  <div class="profile">
+    <div class="container">
+      <div class="row cols-xs-space cols-sm-space cols-md-space">
+        <div class="col-lg-4">
+          <div class="sidebar sidebar--style-2 no-border">
+            <div class="widget">
+              <!-- Profile picture -->
+              <div class="profile-picture profile-picture--style-2">
+                <%= image_tag("prv/people/person-7.jpg", class: "img-center") %>
+                <a href="#" class="btn-aux">
+                  <i class="ion ion-edit"></i>
+                </a>
+              </div>
+
+              <!-- Profile details -->
+              <div class="profile-details">
+                <h2 class="heading heading-4 strong-500 profile-name">
+                  <%= "#{@profile.first_name} #{@profile.last_name}" %>
+                </h2>
+                <h3 class="heading heading-6 strong-400 profile-occupation mt-3">Founder, Web Developer</h3>
+                <h3 class="heading heading-light heading-6 strong-400 profile-location">Bucharest, Romania</h3>
+              </div>
+
+              <!-- Profile stats -->
+              <div class="profile-stats clearfix">
+                <div class="stats-entry">
+                  <span class="stats-count">180</span>
+                  <span class="stats-label text-uppercase">Locations</span>
+                </div>
+                <div class="stats-entry">
+                  <span class="stats-count">4.9/5</span>
+                  <span class="stats-label text-uppercase">Note</span>
+                </div>
+              </div>
+              <div class="profile-connect">
+                <a href="#" class="btn btn-block btn-rounded btn-base-4 btn-styled-custom">Envoyer un message</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="main-content">
+            <!-- Page title -->
+            <div class="page-title">
+              <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                  <h2 class="heading heading-5 text-capitalize strong-500 mb-0">
+                    <a href="#" class="link text-underline--none">
+                      <i class="ion-ios-arrow-back"></i> Profil
+                    </a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <%= render 'submenu' %>
+
+            <!-- Account settings -->
+            <div class="row">
+              <%= content_for?(:content) ? yield(:content) : yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SCRIPTS -->
+<a href="#" class="back-to-top btn-back-to-top"></a>
+
+<% end %>
+<%= render template: "layouts/application" %>
