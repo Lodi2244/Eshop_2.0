@@ -12,7 +12,7 @@ class ProfilesController < ApplicationController
     if @profile.update(profile_params)
       redirect_to profile_path, notice: 'Your profile has been successfully updated!'
     else
-      render :edit
+      redirect_to edit_profile_path
     end
   end
 
