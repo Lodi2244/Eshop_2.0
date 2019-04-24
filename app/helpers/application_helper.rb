@@ -6,4 +6,9 @@ module ApplicationHelper
 
     ''
   end
+
+  def current_profile_tab
+    tabs = { '/profile': 'Profil', '/profile/edit': 'Modifier le profil' }
+    tabs[request.path.to_sym]
+  end
 end

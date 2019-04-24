@@ -20,7 +20,7 @@
                   <%= "#{@profile.first_name} #{@profile.last_name}" %>
                 </h2>
                 <h3 class="heading heading-6 strong-400 profile-occupation mt-3">Founder, Web Developer</h3>
-                <h3 class="heading heading-light heading-6 strong-400 profile-location">Bucharest, Romania</h3>
+                <h3 class="heading heading-light heading-6 strong-400 profile-location"><%= @profile.address %></h3>
               </div>
 
               <!-- Profile stats -->
@@ -49,7 +49,7 @@
                 <div class="col-lg-6 col-12">
                   <h2 class="heading heading-5 text-capitalize strong-500 mb-0">
                     <a href="#" class="link text-underline--none">
-                      <i class="ion-ios-arrow-back"></i> Profil
+                      <i class="ion-ios-arrow-back"></i> <%=  current_profile_tab %>
                     </a>
                   </h2>
                 </div>
