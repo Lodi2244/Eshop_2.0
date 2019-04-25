@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class ItemsController < ApplicationController
-  include Cart
-
   def index
     @items = Item.all
     @categories = Category.all
@@ -11,7 +9,6 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
     @category = Category.find(params[:category_id])
-    @cart = current_cart
   end
 
   def new
@@ -44,7 +41,11 @@ class ItemsController < ApplicationController
     end
   end
 
-  def destroy; end
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy success: 'Item was successfully deleted.'
+    redirect_to fall_back_location
+  end
 
   private
 
