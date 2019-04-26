@@ -43,8 +43,8 @@ class ItemsController < ApplicationController
 
   def destroy
     @item = Item.find(params[:id])
-    @item.destroy success: 'Item was successfully deleted.'
-    redirect_to fall_back_location
+    @item.destroy
+    redirect_to :root_path
   end
 
   private

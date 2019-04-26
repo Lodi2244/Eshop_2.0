@@ -9,7 +9,7 @@ class ItemOrdersController < ApplicationController
 
   def destroy
     @item_order = ItemOrder.find(params[:id])
-    @item_order.destroy success: 'Item was successfully deleted.'
-    redirect_to :back
+    @item_order.destroy
+    redirect_to :root_path
   end
 end

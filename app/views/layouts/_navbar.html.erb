@@ -44,11 +44,10 @@
                   <span class="dc-price"><%= item_order.item.price %></span>
                 </div>
                 <div class="dc-actions">
-                  <button>
-                    <%= link_to item_order_path(item_order.id), method: :delete, data: { confirm: 'Are you sure?' } do %><i class="ion-close"></i><% end %>
-                  </button>
+                    <%= button_to item_order_path(item_order.id), method: :delete, remote: true do %><i class="ion-close"></i><% end %>
                 </div>
               </div>
+              <% end %>
               <div class="dc-item py-4">
                 <span class="subtotal-text">Subtotal</span>
                 <span class="subtotal-amount">$450.00</span>
@@ -75,7 +74,6 @@
                   </li>
                 </ul>
               </div>
-              <% end %>
             <% end %>
             </div>
           </li>
