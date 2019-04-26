@@ -1,4 +1,3 @@
-
 <br>
 <br>
 <br>
@@ -13,17 +12,23 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-  <% @item_orders.each do |item| %>
-  <tbody>
-      <tr>
-        <td><%= item.title %></td>
-        <td><%= item.description %></td>
-        <td><%= item.price %></td>
-        <td><%= image_tag(item.image_url) %></td>
-      </tr>
-  </tbody>
+  <% if @item_orders %>
+
+    <% @item_orders.each do |item_order| %>
+
+      <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
+
+      <%= item_order.item.title %>
+
+      <%= item_order.item.price %>
+
+      <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %>
+      <i class="ion-close"></i>
+    <% end %>
+
   <% end %>
-</table>
+
+<% end %>
 <br>
 <br>
 <br>

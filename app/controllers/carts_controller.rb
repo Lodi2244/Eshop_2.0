@@ -3,6 +3,5 @@
 class CartsController < ApplicationController
   def show
     @cart = current_order
-    @item_orders = @cart.items
   end
 end

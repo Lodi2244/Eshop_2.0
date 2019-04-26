@@ -12,4 +12,10 @@ class ItemOrdersController < ApplicationController
     @item_order.destroy
     redirect_to :root_path
   end
+
+  private
+
+  def item_order_params
+    params.require(:item_order).permit(:order_id, :item_id)
+  end
 end

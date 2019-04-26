@@ -44,9 +44,10 @@
                   <span class="dc-price"><%= item_order.item.price %></span>
                 </div>
                 <div class="dc-actions">
-                    <%= button_to item_order_path(item_order.id), method: :delete, remote: true do %><i class="ion-close"></i><% end %>
+                    <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %><i class="ion-close"></i><% end %>
                 </div>
               </div>
+              <% end %>
               <% end %>
               <div class="dc-item py-4">
                 <span class="subtotal-text">Subtotal</span>
@@ -74,7 +75,6 @@
                   </li>
                 </ul>
               </div>
-            <% end %>
             </div>
           </li>
         </ul>
