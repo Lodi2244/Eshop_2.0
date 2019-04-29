@@ -10,6 +10,7 @@ module Users
 
     def create
       super
+      current_or_guest_user
     end
 
     def destroy
