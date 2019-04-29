@@ -1,35 +1,31 @@
-<br>
-<br>
-<br>
-<br>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  <% if @item_orders %>
+<h3 class="heading heading-6 strong-600">Cart</h3>
+</div>
+<div class="dc-item">
 
-    <% @item_orders.each do |item_order| %>
+<% if @item_orders %>
 
-      <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
+  <% @item_orders.each do |item_order| %>
+    <div class="d-flex align-items-center">
+      <div class="dc-image">
+        <a href="#">
+          <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
+        </a>
+      </div>
+      <div class="dc-content">
+        <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
+          <a href="#">
+            <%= item_order.item.title %>
+          </a>
+        </span>
 
-      <%= item_order.item.title %>
+        <span class="dc-price"><%= item_order.item.price %></span>
+      </div>
+      <div class="dc-actions">
 
-      <%= item_order.item.price %>
-
-      <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %>
-      <i class="ion-close"></i>
+        <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %>
+        <i class="ion-close"></i>
+      <% end %>
     <% end %>
-
-  <% end %>
-
+  </div>
+</div>
 <% end %>
-<br>
-<br>
-<br>
-<br>
