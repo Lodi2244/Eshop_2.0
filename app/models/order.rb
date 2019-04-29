@@ -5,8 +5,8 @@
 # Table name: orders
 #
 #  id          :bigint(8)        not null, primary key
-#  total_price :float
-#  status      :integer
+#  total_price :float            default(0.0)
+#  status      :integer          default("in_progress")
 #  user_id     :bigint(8)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
