@@ -29,9 +29,9 @@ RSpec.describe User, type: :model do
 
     describe 'Database' do
       it { is_expected.to have_db_column(:id).of_type(:integer) }
-      it { is_expected.to have_db_column(:email).of_type(:string).with_options(unique: true, null: false, default: "") }
+      it { is_expected.to have_db_column(:email).of_type(:string).with_options(null: false, default: "") }
       it { is_expected.to have_db_column(:encrypted_password).of_type(:string).with_options(null: false, default: "") }
-      it { is_expected.to have_db_column(:username).of_type(:string).with_options(unique: true, null: false, default: "" ) }
+      it { is_expected.to have_db_column(:username).of_type(:string).with_options(null: false, default: "" ) }
       it { is_expected.to have_db_column(:created_at).of_type(:datetime).with_options(null: false) }
       it { is_expected.to have_db_column(:updated_at).of_type(:datetime).with_options(null: false) }
     end
