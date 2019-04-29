@@ -50,7 +50,7 @@ RSpec.describe User, type: :model do
     end
 
     context 'with indexes' do
-      it { is_expected.to have_db_index(:username).unique(true) }
+      it { is_expected.to have_db_index(:username) }
     end
   end
 end
