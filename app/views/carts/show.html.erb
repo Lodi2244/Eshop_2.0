@@ -1,3 +1,31 @@
+<h3 class="heading heading-6 strong-600">Cart</h3>
+</div>
+<div class="dc-item">
 
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
+<% if @item_orders %>
+
+  <% @item_orders.each do |item_order| %>
+    <div class="d-flex align-items-center">
+      <div class="dc-image">
+        <a href="#">
+          <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
+        </a>
+      </div>
+      <div class="dc-content">
+        <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
+          <a href="#">
+            <%= item_order.item.title %>
+          </a>
+        </span>
+
+        <span class="dc-price"><%= item_order.item.price %></span>
+      </div>
+      <div class="dc-actions">
+
+        <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %>
+        <i class="ion-close"></i>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<% end %>
