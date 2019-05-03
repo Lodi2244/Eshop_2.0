@@ -1,365 +1,139 @@
-<nav class="navbar navbar-expand-lg navbar--bold navbar--style-2 navbar-light bg-default  navbar--shadow fiwed-top">
+<nav class="navbar navbar-expand-lg navbar--bold navbar--style-2 navbar-light bg-default  navbar--shadow fiwed-top custom-nav">
   <div class="container navbar-container">
     <!-- Brand/Logo -->
     <%= link_to root_path, class: 'navbar-brand' do %>
     <%= image_tag('logo/logo.png') %>
-    <% end %>
+  <% end %>
 
-    <div class="d-inline-block">
-      <!-- Navbar toggler  -->
-      <button class="navbar-toggler hamburger hamburger-js hamburger--spring" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbar_main">
-
-      <!-- Navbar links -->
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Pages
-          </a>
-
-          <div class="dropdown-menu dropdown-menu-xl py-0 px-0 overflow--hidden" aria-labelledby="navbar_1_dropdown_1">
-            <div class="list-group rounded">
-              <a href="../../pages-home.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div class="list-group-content">
-                  <div class="list-group-heading heading heading-6 mb-1">Home pages</div>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
-                </div>
-              </a>
-              <a href="../../pages-inner.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div class="list-group-content">
-                  <div class="list-group-heading heading heading-6 mb-1">Inner pages</div>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
-                </div>
-              </a>
-              <a href="../../pages-profile.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div class="list-group-content">
-                  <div class="list-group-heading heading heading-6 mb-1">Profile pages</div>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
-                </div>
-              </a>
-              <a href="../../pages-blog.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div class="list-group-content">
-                  <div class="list-group-heading heading heading-6 mb-1">Blog pages</div>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
-                </div>
-              </a>
-              <a href="../../pages-shop.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div class="list-group-content">
-                  <div class="list-group-heading heading heading-6 mb-1">Shop pages</div>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
-                </div>
-              </a>
-              <a href="../../pages-real-estate.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div class="list-group-content">
-                  <div class="list-group-heading heading heading-6 mb-1">Real estate pages</div>
-                  <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item dropdown megamenu">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Components
-          </a>
-
-          <div class="dropdown-menu">
-            <div class="mega-dropdown-menu row row-no-padding">
-              <div class="mega-dropdown-col mega-dropdown-col-cover mega-dropdown-col-cover--left col-lg-5 d-none d-lg-block d-xl-block" style="background-image: url(../../assets/images/prv/other/img-14-1000x900.jpg); background-position: center center;">
-                <span class="mask mask-base-1--style-1 alpha-8"></span>
-                <div class="mega-dropdown-col-inner d-flex align-items-center no-padding">
-                  <div class="col">
-                    <div class="row align-items-center">
-                      <div class="col-12">
-                        <div class="px-4">
-                          <h2 class="heading heading-2 strong-600 c-white">
-                            Documentation and Shortcodes
-                          </h2>
-                          <p class="strong-300 c-white mt-4">
-                            Get started fast and easy with Boomerang using the documentation and shortcode examples. No matter
-                            you are a developer or new to web design, you will
-                            find our theme very easy to customize with
-                            an intuitive HTML markup.
-                          </p>
-                          <div class="btn-container mt-5">
-                            <a href="../../documentation/getting-started/introduction.html" target="_blank" class="btn btn-styled btn-white btn-outline btn-circle">Read the Docs</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 col-lg-2 ml-lg-auto">
-                <ul class="megadropdown-links">
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/alerts.html">
-                      Alerts
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/badges.html">
-                      Badges
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/buttons.html">
-                      Buttons
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/cards.html">
-                      Cards
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/collapse.html">
-                      Collapse
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/countdown.html">
-                      Countdown
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/dropdown.html">
-                      Dropdowns
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/forms.html">
-                      Forms
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/instagram.html">
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/lightbox.html">
-                      Lightbox
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/maps.html">
-                      Maps
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/masonry.html">
-                      Masonry
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-md-4 col-lg-2">
-                <ul class="megadropdown-links">
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/pagination.html">
-                      Pagination
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/progress.html">
-                      Progress bars
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/recaptcha.html">
-                      Recaptcha
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/content/titles.html">
-                      Section titles
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/forms.html#ex_component_sliders">
-                      Sliders
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/tabs.html">
-                      Tabs
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/components/typed-animations.html">
-                      Typed animations
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/headers.html">
-                      Headers
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../html/default/sliders/boomerang-slider/index.html">
-                      Boomerang slider
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../html/default/sliders/revolution-slider/index.html">
-                      Revolution slider
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/footers.html">
-                      Footers
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/hero.html">
-                      Hero blocks
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-md-4 col-lg-2">
-                <ul class="megadropdown-links">
-
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/icon.html">
-                      Icon blocks
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/jobs.html">
-                      Job blocks
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/pricing.html">
-                      Pricing blocks
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/product.html">
-                      Product blocks
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/real-estate.html">
-                      Real-Estate blocks
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/team.html">
-                      Team blocks
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/testimonials.html">
-                      Testimonial blocks
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="../../documentation/blocks/comments.html">
-                      Comment blocks
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-      <ul class="navbar-nav ml-lg-auto">
-        <% if user_signed_in? %>
-        <li class="nav-item dropdown-cart col-md-8">
-          <a href="#" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-shopping-cart"></i>
-          </a>
-          <div class="dropdown-menu py-0 px-0 overflow--hidden" aria-labelledby="navbar_1_dropdown_1">
-            <div class="dc-header">
-              <h3 class="heading heading-6 strong-600">Cart</h3>
-            </div>
-
-            <!-- CART START -->
-            <div class="dc-item">
-              <% if @item_orders %>
-              <% @item_orders.each do |item_order| %>
-              <div class="d-flex align-items-center">
-                <div class="dc-image">
-                  <a href="#">
-                    <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
-                  </a>
-                </div>
-                <div class="dc-content">
-                  <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
-                    <a href="#">
-                      <%= item_order.item.title %>
-                    </a>
-                  </span>
-
-                  <span class="dc-price"><%= item_order.item.price %></span>
-                </div>
-                <div class="dc-actions">
-                    <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %><i class="ion-close"></i><% end %>
-                </div>
-              </div>
-              <% end %>
-              <% end %>
-              <div class="dc-item py-4">
-                <span class="subtotal-text">Subtotal</span>
-                <span class="subtotal-amount">$450.00</span>
-              </div>
-
-              <div class="py-4 text-center">
-                <ul class="inline-links inline-links--style-3">
-                  <li class="pr-3">
-                    <a href="#" class="link link--style-2 text-capitalize">
-                      <i class="ion-person"></i>
-                      My account
-                    </a>
-                  </li>
-                  <li class="pr-3">
-                    <a href="#" class="link link--style-1 text-capitalize">
-                      <%= link_to cart_path(current_order) do %><i class="ion-bag"></i>
-                      View cart<% end %>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="link link--style-1 text-capitalize">
-                      <i class="ion-forward"></i>
-                      Checkout
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- CART END -->
-          </div>
-          <!-- CART DROPDOWN END -->
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Se déconnecter' , destroy_user_session_path, method: :delete, class: "btn btn-block btn-base-1 btn-outline btn-circle btn-login" %>
-        </li>
-        <% else %>
-        <li class="nav-item">
-          <%= link_to 'Se connecter', new_user_session_path, class: "btn btn-block btn-base-1 btn-outline btn-circle btn-login" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Créer un compte', new_user_registration_path, class: "btn btn-block btn-base-1 btn-circle btn-login" %>
-        </li>
-        <% end %>
-      </ul>
-    </div>
-
+  <div class="d-inline-block">
+    <!-- Navbar toggler -->
+    <button class="navbar-toggler hamburger hamburger-js hamburger--spring" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </div>
+
+  <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbar_main">
+
+    <!-- Navbar links -->
+    <!-- <ul class="navbar-nav"> <li class="nav-item dropdown"> <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </a> <div class="dropdown-menu dropdown-menu-xl py-0 px-0 overflow--hidden"
+    aria-labelledby="navbar_1_dropdown_1"> <div class="list-group rounded"> <a href="../../pages-home.html" class="list-group-item list-group-item-action d-flex align-items-center"> <div class="list-group-content"> <div class="list-group-heading heading
+    heading-6 mb-1">Home pages</div> <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p> </div> </a> <a href="../../pages-inner.html" class="list-group-item list-group-item-action d-flex align-items-center"> <div
+    class="list-group-content"> <div class="list-group-heading heading heading-6 mb-1">Inner pages</div> <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p> </div> </a> <a href="../../pages-profile.html"
+    class="list-group-item list-group-item-action d-flex align-items-center"> <div class="list-group-content"> <div class="list-group-heading heading heading-6 mb-1">Profile pages</div> <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur
+    adipiscing eiusmod tempor</p> </div> </a> <a href="../../pages-blog.html" class="list-group-item list-group-item-action d-flex align-items-center"> <div class="list-group-content"> <div class="list-group-heading heading heading-6 mb-1">Blog
+    pages</div> <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p> </div> </a> <a href="../../pages-shop.html" class="list-group-item list-group-item-action d-flex align-items-center"> <div
+    class="list-group-content"> <div class="list-group-heading heading heading-6 mb-1">Shop pages</div> <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p> </div> </a> <a href="../../pages-real-estate.html"
+    class="list-group-item list-group-item-action d-flex align-items-center"> <div class="list-group-content"> <div class="list-group-heading heading heading-6 mb-1">Real estate pages</div> <p class="text-sm mb-0">Lorem ipsum dolor sit amet consectetur
+    adipiscing eiusmod tempor</p> </div> </a> </div> </div> </li> <li class="nav-item dropdown megamenu"> <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </a> <div class="dropdown-menu"> <div
+    class="mega-dropdown-menu row row-no-padding"> <div class="mega-dropdown-col mega-dropdown-col-cover mega-dropdown-col-cover--left col-lg-5 d-none d-lg-block d-xl-block" style="background-image: url(../../assets/images/prv/other/img-14-1000x900.jpg);
+    background-position: center center;"> <span class="mask mask-base-1--style-1 alpha-8"></span> <div class="mega-dropdown-col-inner d-flex align-items-center no-padding"> <div class="col"> <div class="row align-items-center"> <div class="col-12"> <div
+    class="px-4"> <h2 class="heading heading-2 strong-600 c-white"> Documentation and Shortcodes </h2> <p class="strong-300 c-white mt-4"> Get started fast and easy with Boomerang using the documentation and shortcode examples. No matter you are a
+    developer or new to web design, you will find our theme very easy to customize with an intuitive HTML markup. </p> <div class="btn-container mt-5"> <a href="../../documentation/getting-started/introduction.html" target="_blank" class="btn btn-styled
+    btn-white btn-outline btn-circle">Read the Docs</a> </div> </div> </div> </div> </div> </div> </div> <div class="col-md-4 col-lg-2 ml-lg-auto"> <ul class="megadropdown-links"> <li> <a class="dropdown-item"
+    href="../../documentation/components/alerts.html"> Alerts </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/badges.html"> Badges </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/buttons.html">
+    Buttons </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/cards.html"> Cards </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/collapse.html"> Collapse </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/components/countdown.html"> Countdown </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/dropdown.html"> Dropdowns </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/components/forms.html"> Forms </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/instagram.html"> Instagram </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/components/lightbox.html"> Lightbox </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/maps.html"> Maps </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/masonry.html">
+    Masonry </a> </li> </ul> </div> <div class="col-md-4 col-lg-2"> <ul class="megadropdown-links"> <li> <a class="dropdown-item" href="../../documentation/components/pagination.html"> Pagination </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/components/progress.html"> Progress bars </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/recaptcha.html"> Recaptcha </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/content/titles.html"> Section titles </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/forms.html#ex_component_sliders"> Sliders </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/components/tabs.html"> Tabs </a> </li> <li> <a class="dropdown-item" href="../../documentation/components/typed-animations.html"> Typed animations </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/blocks/headers.html"> Headers </a> </li> <li> <a class="dropdown-item" href="../../html/default/sliders/boomerang-slider/index.html"> Boomerang slider </a> </li> <li> <a class="dropdown-item"
+    href="../../html/default/sliders/revolution-slider/index.html"> Revolution slider </a> </li> <li> <a class="dropdown-item" href="../../documentation/blocks/footers.html"> Footers </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/blocks/hero.html"> Hero blocks </a> </li> </ul> </div> <div class="col-md-4 col-lg-2"> <ul class="megadropdown-links"> <li> <a class="dropdown-item" href="../../documentation/blocks/icon.html"> Icon blocks </a> </li> <li> <a
+    class="dropdown-item" href="../../documentation/blocks/jobs.html"> Job blocks </a> </li> <li> <a class="dropdown-item" href="../../documentation/blocks/pricing.html"> Pricing blocks </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/blocks/product.html"> Product blocks </a> </li> <li> <a class="dropdown-item" href="../../documentation/blocks/real-estate.html"> Real-Estate blocks </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/blocks/team.html"> Team blocks </a> </li> <li> <a class="dropdown-item" href="../../documentation/blocks/testimonials.html"> Testimonial blocks </a> </li> <li> <a class="dropdown-item"
+    href="../../documentation/blocks/comments.html"> Comment blocks </a> </li> </ul> </div> </div> </div> </li> </ul> -->
+
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown-cart col-md-8">
+        <a href="#" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="icon-hotel-restaurant-105"></i>
+        </a>
+        <div class="dropdown-menu py-0 px-0 overflow--hidden" aria-labelledby="navbar_1_dropdown_1">
+          <div class="dc-header">
+            <h3 class="heading heading-6 strong-600">Cart</h3>
+          </div>
+
+          <!-- CART START -->
+          <% if @item_orders.empty? %>
+            <i class="heading strong-200 mb-1">Your cart is empty
+            </i>
+          <% else %>
+            <div class="dc-item">
+              <% @item_orders.each do |item_order| %>
+                <div class="d-flex align-items-center">
+                  <div class="dc-image">
+                    <a href="#">
+                      <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
+                    </a>
+                  </div>
+                  <div class="dc-content">
+                    <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
+                      <a href="#">
+                        <%= item_order.item.title %>
+                      </a>
+                    </span>
+                    <span class="dc-price"><%= item_order.item.price %></span>
+                  </div>
+                  <div class="dc-actions">
+                    <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %>
+                    <i class="ion-close"></i>
+                  <% end %>
+                </div>
+              </div>
+            <% end %>
+            <div class="dc-item py-4">
+              <span class="subtotal-text">Subtotal</span>
+              <span class="subtotal-amount"><%= @order_total %></span>
+            </div>
+          <% end %>
+          <div class="py-4 text-center">
+            <ul class="inline-links inline-links--style-3">
+              <li class="pr-3">
+                <a href="#" class="link link--style-2 text-capitalize">
+                  <i class="ion-person"></i>
+                  My account
+                </a>
+              </li>
+              <li class="pr-3">
+                <a href="#" class="link link--style-1 text-capitalize">
+                  <%= link_to cart_path(current_order) do %>
+                  <i class="ion-bag"></i>
+                  View cart<% end %>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link link--style-1 text-capitalize">
+                <i class="ion-forward"></i>
+                Checkout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- CART END -->
+    </div>
+    <!-- CART DROPDOWN END -->
+  </li>
+  <li class="nav-item">
+    <% if user_signed_in? %>
+      <%= link_to 'Se déconnecter' , destroy_user_session_path, method: :delete, class: "btn btn-block btn-base-1 btn-outline btn-circle btn-login" %>
+    </li>
+  <% else %>
+    <li class="nav-item">
+      <%= link_to 'Se connecter', new_user_session_path, class: "btn btn-block btn-base-1 btn-outline btn-circle btn-login" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to 'Créer un compte', new_user_registration_path, class: "btn btn-block btn-base-1 btn-circle btn-login" %>
+    </li>
+  <% end %>
+</ul>
+</div>
+
+</div>
 </nav>
