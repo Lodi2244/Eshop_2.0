@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
-
   def active?(path)
     return 'active' if request.path == path
 
