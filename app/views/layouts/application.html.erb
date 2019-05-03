@@ -24,7 +24,7 @@
     </p>
   </header>
 
-  <%= yield %>
+  <%= content_for?(:layout) ? yield(:layout) : yield %>
 
   <footer>
     <%= render 'layouts/footer' %>

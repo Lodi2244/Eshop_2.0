@@ -1,31 +1,121 @@
-<h3 class="heading heading-6 strong-600">Cart</h3>
-</div>
-<div class="dc-item">
+<section class="slice-xl page-title border-bottom has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path 'backgrounds/close-up-vintage-camera-white-background_1156-34.jpg' %>);">
+  <div class="container mask-container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="">
+          <h3 class="heading heading-1 strong-600 text-capitalize mb-1">
+            <span>Cart</span>
+          </h3>
 
-<% if @item_orders %>
+          <ol class="breadcrumb breadcrumb--style-2">
+            <li class="breadcrumb-item">
+              <a href=""><%= link_to "Home", root_path %></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href=""><%= link_to "Shop", root_path %></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href=""><%= link_to "Checkout", orders_path %></a>
+            </li>
+          </ol>
+        </div>
 
-  <% @item_orders.each do |item_order| %>
-    <div class="d-flex align-items-center">
-      <div class="dc-image">
-        <a href="#">
-          <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
-        </a>
+        <!-- Fluid text paragraph -->
+        <div class="pb-4 mt-4">
+          <p class="lead">
+            Parturient mus aenean a suspendisse est ligula eu dui a ultricies dictumst porttitor rhoncus a vestibulum.
+          </p>
+        </div>
       </div>
-      <div class="dc-content">
-        <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
-          <a href="#">
-            <%= item_order.item.title %>
-          </a>
-        </span>
+    </div>
+  </div>
+</section>
 
-        <span class="dc-price"><%= item_order.item.price %></span>
-      </div>
-      <div class="dc-actions">
+<% if @item_orders.empty? %>
+  <%= render 'empty_cart' %>
+<% else %>
 
-        <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %>
-        <i class="ion-close"></i>
-      <% end %>
-    <% end %>
+  <section class="slice sct-color-1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 mt--150">
+          <form class="form-default" data-toggle="validator" role="form">
+            <div class="card">
+              <div class="card-body">
+                <table class="table-cart">
+                  <thead>
+                    <tr>
+                      <th class="product-image"></th>
+                      <th class="product-name">Article</th>
+                      <th class="product-price d-none d-lg-table-cell">Prix</th>
+                      <th class="product-quanity d-none d-md-table-cell">Durée de Location</th>
+                      <th class="product-total">Total</th>
+                      <th class="product-remove"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% @item_orders.each do |item_order| %>
+                      <tr class="cart-item">
+                        <td class="product-image">
+                          <a href="#">
+                            <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
+                          </a>
+                        </td>
+
+                        <td class="product-name">
+                          <%= item_order.item.title %>
+                        </td>
+
+                        <td class="product-price d-none d-lg-table-cell">
+                          <%= item_order.item.price %>
+                        </td>
+                        <!-- TODO remplacer la quantity par un datepicker pour le nombre de jours de location -->
+                        <td class="product-quantity d-none d-md-table-cell">
+                          <div class="input-group input-group--style-2 pr-4" style="width: 130px;">
+                            <span class="input-group-btn">
+                              <button class="btn btn-number" type="button" data-type="minus" data-field="quantity[1]" disabled="disabled">
+                                <i class="ion-minus"></i>
+                              </button>
+                            </span>
+                            <input type="text" name="quantity[1]" class="form-control input-number" placeholder="3" value="1" min="1" max="10">
+                            <span class="input-group-btn">
+                              <button class="btn btn-number" type="button" data-type="plus" data-field="quantity[1]">
+                                <i class="ion-plus"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="product-total">
+                          <span>
+                            <%= @order_total %>
+                          </span>
+                        </td>
+                        <td class="product-remove">
+                          <%= link_to item_order_path(item_order.id), remote: true, method: :delete, class:"text-right pl-4" do %>
+                          <i class="ion-trash-a"></i>
+                        <% end %>
+                      <% end %>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row align-items-center pt-5">
+            <div class="col-6">
+              <%= link_to root_path, class:"link link--style-3" do %>
+              <i class="ion-android-arrow-back">
+                Return to shop</i>
+            <% end %>
+          </div>
+          <div class="col-6 text-right">
+            <%= link_to "Valider le panier", orders_path, class:"btn btn-styled btn-base-1" %>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
+</section>
 <% end %>

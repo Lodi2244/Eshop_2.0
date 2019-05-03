@@ -17,7 +17,8 @@ d = "zoom grand angle"
 # g = "flash cobra"
 h = "éclairage continu"
 
-User.create!(email: "test3@gmail.com", password: "123456", password_confirmation: "123456", first_name: "Elodie", last_name: "Pixeloo", username: "Elo3")
+user = User.create!(email: "test3@gmail.com", password: "123456", password_confirmation: "123456", username: "Elo3")
+user.profile.update!(first_name: 'Alan', last_name: 'Turing', address: '5 Parvis Alan Turing')
 
 Category.destroy_all
 

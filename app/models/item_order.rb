@@ -14,13 +14,4 @@
 class ItemOrder < ApplicationRecord
   belongs_to :item
   belongs_to :order
-
-  private
-
-  def total_price
-    total_price = []
-    user = User.find(user_id)
-    user.item_orders.map { |cart| total_price << cart.item.price }
-    total_price.sum
-  end
 end
