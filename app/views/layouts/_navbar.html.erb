@@ -60,11 +60,11 @@
           </div>
 
           <!-- CART START -->
-          <div class="dc-item">
-            <% if @item_orders.empty? %>
-              <i class="heading strong-200 mb-1">Your cart is empty
-              </i>
-            <% else %>
+          <% if @item_orders.empty? %>
+            <i class="heading strong-200 mb-1">Your cart is empty
+            </i>
+          <% else %>
+            <div class="dc-item">
               <% @item_orders.each do |item_order| %>
                 <div class="d-flex align-items-center">
                   <div class="dc-image">
@@ -78,7 +78,6 @@
                         <%= item_order.item.title %>
                       </a>
                     </span>
-
                     <span class="dc-price"><%= item_order.item.price %></span>
                   </div>
                   <div class="dc-actions">
@@ -87,11 +86,11 @@
                   <% end %>
                 </div>
               </div>
-              <div class="dc-item py-4">
-                <span class="subtotal-text">Subtotal</span>
-                <span class="subtotal-amount"><%= @order_total %></span>
-              </div>
             <% end %>
+            <div class="dc-item py-4">
+              <span class="subtotal-text">Subtotal</span>
+              <span class="subtotal-amount"><%= @order_total %></span>
+            </div>
           <% end %>
           <div class="py-4 text-center">
             <ul class="inline-links inline-links--style-3">
