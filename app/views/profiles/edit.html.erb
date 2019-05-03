@@ -1,0 +1,43 @@
+<% content_for :content do %>
+<div class="col-lg-12">
+  <div class="card no-border bg-transparent">
+    <div class="card-title px-0 pb-0 no-border">
+      <h3 class="heading heading-6 strong-600">
+        General information
+      </h3>
+      <p class="mt-1 mb-0">
+        You can help us, by filling your data, create you a much better experience using our website.
+      </p>
+    </div>
+    <div class="card-body px-0">
+      <%= form_for @profile do |f| %>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="form-group">
+            <%= f.label :first_name, 'Prénom' %>
+            <%= f.text_field :first_name, class: "form-control form-control-lg" %>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="form-group">
+            <%= f.label :last_name, 'Nom' %>
+            <%= f.text_field :last_name, class: "form-control form-control-lg" %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="form-group">
+            <%= f.label :address, 'Adresse' %>
+            <%= f.text_area :address, class: "form-control form-control-lg" %>
+          </div>
+        </div>
+      </div>
+      <%= f.submit 'Modifier' ,class: "btn btn-base-1" %>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+<% end %>
