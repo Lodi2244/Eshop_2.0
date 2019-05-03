@@ -12,7 +12,7 @@ AllCops:
     - 'vendor/**/*'
     - 'config/environments/*.rb'
     - 'bin/*'
-
+    - 'app/controllers/application_controller.rb'
 Rails:
   Enabled: true
 

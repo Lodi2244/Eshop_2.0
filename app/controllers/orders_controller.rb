@@ -1,9 +1,13 @@
 # frozen_string_literal: true
 
 class OrdersController < ApplicationController
-  def index; end
+  def index
+    @order = Order.all
+  end
 
-  def show; end
+  def show
+    @orders = Order.find(params[:id])
+  end
 
   def new; end
 

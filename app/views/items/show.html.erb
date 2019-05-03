@@ -1,262 +1,242 @@
 <section class="slice sct-color-1">
-<div class="container">
+  <div class="container">
     <!-- Product gallery and Description -->
     <div class="row cols-xs-space cols-sm-space cols-md-space">
-        <div class="col-lg-6">
-            <div class="gallery-container">
-                <div id="slideshow" class="gallery-top no-padding bg-transparent"></div>
-                <div id="slideshow_thumbs" class="swiper-js-container gallery-thumbs gallery-thumbs--style-1 mt-4">
-                    <div class="swiper-container" data-swiper-items="5" data-swiper-space-between="10" data-swiper-xs-items="3" data-swiper-xs-space-between="10" data-swiper-sm-items="4" data-swiper-sm-space-between="10">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="" data-desoslide-index="0">
-                                    <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" data-desoslide-index="1">
-                                <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" data-desoslide-index="2">
-                                    <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" data-desoslide-index="3">
-                                <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" data-desoslide-index="4">
-                                    <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="" data-desoslide-index="5">
-                                    <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="col-lg-6">
+        <div class="gallery-container">
+          <div id="slideshow" class="gallery-top no-padding bg-transparent"><%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
+</div>
+          <div id="slideshow_thumbs" class="swiper-js-container gallery-thumbs gallery-thumbs--style-1 mt-4">
+            <div class="swiper-container" data-swiper-items="5" data-swiper-space-between="10" data-swiper-xs-items="3" data-swiper-xs-space-between="10" data-swiper-sm-items="4" data-swiper-sm-space-between="10">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="" data-desoslide-index="0">
+                    <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
+                  </a>
                 </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="px-2">
-                <!-- Product description -->
-                <div class="product-description-wrapper px-1">
-                    <!-- Product title -->
-                    <h2 class="product-title">
-                       <%= @item.title %>
-                    </h2>
-
-                    <hr>
-
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            <!-- Rating stars -->
-                            <div class="rating">
-                                <span class="star voted" rel="1"></span>
-                                <span class="star voted" rel="2"></span>
-                                <span class="star voted" rel="3"></span>
-                                <span class="star" rel="4"></span>
-                                <span class="star" rel="5"></span>
-
-                                <span class="rating-count">(2 customer reviews)</span>
-                            </div>
-                        </div>
-
-                        <div class="col-6 text-right">
-                            <ul class="inline-links inline-links--style-1 align-items-center">
-                                <li class="">
-                                    <span class="badge badge-md badge-pill bg-blue">ID: #548970</span>
-                                </li>
-                                <li>
-                                    <span class="badge badge-md badge-pill bg-green">In stock</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Product description -->
-                    <div class="product-short-text mt-3">
-                        <h3 class="heading heading-xs strong-500 text-uppercase">
-                            Description:
-                        </h3>
-                        <p>
-                        <%= @item.description %>
-                        </p>
-                    </div>
-
-                    <hr>
-
-                    <table class="table table-specs">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span class="c-gray-light strong-600">Display</span>
-                                </td>
-                                <td>
-                                    13.3-inch LED-backlit display with IPS
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="c-gray-light strong-600">Processor</span>
-                                </td>
-                                <td>
-                                    2.3GHz dual-core Intel Core i5, Turbo Boost up to 3.6GHz
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="c-gray-light strong-600">Camera</span>
-                                </td>
-                                <td>
-                                    720p FaceTime HD camera
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="c-gray-light strong-600">Memory</span>
-                                </td>
-                                <td>
-                                    8 GB RAM or 16 GB RAM
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="c-gray-light strong-600">Graphics</span>
-                                </td>
-                                <td>
-                                    Intel Iris Plus Graphics 640
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <hr>
-
-                    <div class="row row-no-padding no-margin">
-                        <div class="col-lg-8">
-                            <form class="form-default">
-                                <!-- Choose size -->
-                                <label class="strong-600">Choose storage</label>
-                                <div class="d-table checkbox-alphanumeric checkbox-alphanumeric--style-1">
-                                    <div class="d-table-cell">
-                                        <div class="pr-2">
-                                            <input type="radio" id="size-1" name="size">
-                                            <label for="size-1">256 GB</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-table-cell">
-                                        <div class="pr-2">
-                                            <input type="radio" id="size-2" name="size">
-                                            <label for="size-2">512 GB</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-table-cell">
-                                        <div class="">
-                                            <input type="radio" id="size-3" name="size">
-                                            <label for="size-3">1 TB</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Quantity + Add to cart -->
-                                <div class="d-table product-quantity width-100 mt-3">
-                                    <div class="d-table-cell width-20">
-                                        <div class="pr-2">
-                                            <input type="text" class="form-control form-control-lg text-center" value="1">
-                                        </div>
-                                    </div>
-                                    <div class="d-table-cell">
-                                        <!-- Add to cart button -->
-                                        <button type="button" class="btn btn-styled btn-block btn-base-1 btn-icon-left">
-                                            <i class="icon ion-bag"></i> Add to cart
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                <div class="swiper-slide">
+                  <a href="" data-desoslide-index="1">
+                    <%= image_tag(@item.image_url, :alt => "" , :class => "img-center")%>
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="px-2">
+          <!-- Product description -->
+          <div class="product-description-wrapper px-1">
+            <!-- Product title -->
+            <h2 class="product-title">
+              <%= @item.title %>
+            </h2>
+
+            <hr>
+
+            <div class="row align-items-center">
+              <div class="col-6">
+                <!-- Rating stars -->
+                <div class="rating">
+                  <span class="star voted" rel="1"></span>
+                  <span class="star voted" rel="2"></span>
+                  <span class="star voted" rel="3"></span>
+                  <span class="star" rel="4"></span>
+                  <span class="star" rel="5"></span>
+
+                  <span class="rating-count">(2 customer reviews)</span>
+                </div>
+              </div>
+
+              <div class="col-6 text-right">
+                <ul class="inline-links inline-links--style-1 align-items-center">
+                  <li class="">
+                    <span class="badge badge-md badge-pill bg-blue">ID: #548970</span>
+                  </li>
+                  <li>
+                    <span class="badge badge-md badge-pill bg-green">In stock</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Product description -->
+            <div class="product-short-text mt-3">
+              <h3 class="heading heading-xs strong-500 text-uppercase">
+                Description:
+              </h3>
+              <p>
+                <%= @item.description %>
+              </p>
+            </div>
+
+            <hr>
+
+            <table class="table table-specs">
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="c-gray-light strong-600">Display</span>
+                  </td>
+                  <td>
+                    13.3-inch LED-backlit display with IPS
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="c-gray-light strong-600">Processor</span>
+                  </td>
+                  <td>
+                    2.3GHz dual-core Intel Core i5, Turbo Boost up to 3.6GHz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="c-gray-light strong-600">Camera</span>
+                  </td>
+                  <td>
+                    720p FaceTime HD camera
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="c-gray-light strong-600">Memory</span>
+                  </td>
+                  <td>
+                    8 GB RAM or 16 GB RAM
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="c-gray-light strong-600">Graphics</span>
+                  </td>
+                  <td>
+                    Intel Iris Plus Graphics 640
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr>
+
+            <div class="row row-no-padding no-margin">
+              <div class="col-lg-8">
+                <!-- Choose size -->
+                <label class="strong-600">Choose storage</label>
+                <div class="d-table checkbox-alphanumeric checkbox-alphanumeric--style-1">
+                  <div class="d-table-cell">
+                    <div class="pr-2">
+                      <input type="radio" id="size-1" name="size">
+                      <label for="size-1">256 GB</label>
+                    </div>
+                  </div>
+
+                  <div class="d-table-cell">
+                    <div class="pr-2">
+                      <input type="radio" id="size-2" name="size">
+                      <label for="size-2">512 GB</label>
+                    </div>
+                  </div>
+
+                  <div class="d-table-cell">
+                    <div class="">
+                      <input type="radio" id="size-3" name="size">
+                      <label for="size-3">1 TB</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quantity + Add to cart -->
+                <div class="d-table product-quantity width-100 mt-3">
+                  <div class="d-table-cell width-20">
+                    <div class="pr-2">
+                      <input type="text" class="form-control form-control-lg text-center" value="1">
+                    </div>
+                  </div>
+                  <div class="d-table-cell">
+                    <!-- Add to cart button -->
+                      <%= link_to(item_orders_path(id: @item), class: "btn btn-styled btn-block btn-base-1 btn-icon-left", method: :post) do %>
+                      <i class="icon ion-bag"></i>Add to Cart
+                      <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<span class="space-xs-xl"></span>
+
+<!-- Product tech specs -->
+<div class="row-wrapper">
+  <div class="row cols-xs-space cols-sm-space cols-md-space">
+    <div class="col-lg-4">
+      <div class="feature feature--boxed-border feature--bg-1">
+        <h3 class="heading heading-6 strong-600">Software</h3>
+        <p>
+          macOS High Sierra
+          <br>
+          Office 365 - 1 year license
+        </p>
+      </div>
     </div>
 
-    <span class="space-xs-xl"></span>
-
-    <!-- Product tech specs -->
-    <div class="row-wrapper">
-        <div class="row cols-xs-space cols-sm-space cols-md-space">
-            <div class="col-lg-4">
-                <div class="feature feature--boxed-border feature--bg-1">
-                    <h3 class="heading heading-6 strong-600">Software</h3>
-                    <p>
-                        macOS High Sierra
-                        <br>
-                        Office 365 - 1 year license
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="feature feature--boxed-border feature--bg-1">
-                    <h3 class="heading heading-6 strong-600">Keyboard and Trackpad</h3>
-                    <p>
-                        78 (U.S.) or 79 (ISO) keys including 12 function keys and 4 arrow keys
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="feature feature--boxed-border feature--bg-1">
-                    <h3 class="heading heading-6 strong-600">Wireless</h3>
-                    <p>
-                        802.11ac Wi-Fi wireless networking; IEEE 802.11a/b/g/n compatible
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row cols-xs-space cols-sm-space cols-md-space">
-            <div class="col-lg-4">
-                <div class="feature feature--boxed-border feature--bg-1">
-                    <h3 class="heading heading-6 strong-600">Video Support</h3>
-                    <p>
-                        One display with 5120-by-2880 resolution at 60Hz at over a billion colors
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="feature feature--boxed-border feature--bg-1">
-                    <h3 class="heading heading-6 strong-600">Audio</h3>
-                    <p>
-                        Stereo speakers with high dynamic range
-                        <br>
-                        Two microphones
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="feature feature--boxed-border feature--bg-1">
-                    <h3 class="heading heading-6 strong-600">Battery and Power</h3>
-                    <p>
-                        Up to 10 hours wireless web
-                        <br>
-                        Up to 30 days of standby time
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div class="col-lg-4">
+      <div class="feature feature--boxed-border feature--bg-1">
+        <h3 class="heading heading-6 strong-600">Keyboard and Trackpad</h3>
+        <p>
+          78 (U.S.) or 79 (ISO) keys including 12 function keys and 4 arrow keys
+        </p>
+      </div>
     </div>
+
+    <div class="col-lg-4">
+      <div class="feature feature--boxed-border feature--bg-1">
+        <h3 class="heading heading-6 strong-600">Wireless</h3>
+        <p>
+          802.11ac Wi-Fi wireless networking; IEEE 802.11a/b/g/n compatible
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row cols-xs-space cols-sm-space cols-md-space">
+    <div class="col-lg-4">
+      <div class="feature feature--boxed-border feature--bg-1">
+        <h3 class="heading heading-6 strong-600">Video Support</h3>
+        <p>
+          One display with 5120-by-2880 resolution at 60Hz at over a billion colors
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="feature feature--boxed-border feature--bg-1">
+        <h3 class="heading heading-6 strong-600">Audio</h3>
+        <p>
+          Stereo speakers with high dynamic range
+          <br>
+          Two microphones
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="feature feature--boxed-border feature--bg-1">
+        <h3 class="heading heading-6 strong-600">Battery and Power</h3>
+        <p>
+          Up to 10 hours wireless web
+          <br>
+          Up to 30 days of standby time
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </section>

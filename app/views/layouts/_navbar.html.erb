@@ -292,29 +292,29 @@
 
             <!-- CART START -->
             <div class="dc-item">
+              <% if @item_orders %>
+              <% @item_orders.each do |item_order| %>
               <div class="d-flex align-items-center">
                 <div class="dc-image">
                   <a href="#">
-                    <%= image_tag("slider/bottlesbg.jpg", class:"img-fluid", alt:"") %>
+                    <%= image_tag(item_order.item.image_url, class:"img-fluid", alt:"") %>
                   </a>
                 </div>
                 <div class="dc-content">
                   <span class="d-block dc-product-name text-capitalize strong-600 mb-1">
                     <a href="#">
-                      Wood phone case
+                      <%= item_order.item.title %>
                     </a>
                   </span>
 
-                  <span class="dc-quantity">x2</span>
-                  <span class="dc-price">$50.00</span>
+                  <span class="dc-price"><%= item_order.item.price %></span>
                 </div>
                 <div class="dc-actions">
-                  <button>
-                    <i class="ion-close"></i>
-                  </button>
+                    <%= button_to item_order_path(item_order.id), remote: true, method: :delete do %><i class="ion-close"></i><% end %>
                 </div>
               </div>
-
+              <% end %>
+              <% end %>
               <div class="dc-item py-4">
                 <span class="subtotal-text">Subtotal</span>
                 <span class="subtotal-amount">$450.00</span>
@@ -330,8 +330,8 @@
                   </li>
                   <li class="pr-3">
                     <a href="#" class="link link--style-1 text-capitalize">
-                      <i class="ion-bag"></i>
-                      View cart
+                      <%= link_to cart_path(current_order) do %><i class="ion-bag"></i>
+                      View cart<% end %>
                     </a>
                   </li>
                   <li>
