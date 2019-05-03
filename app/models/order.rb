@@ -21,4 +21,8 @@ class Order < ApplicationRecord
   has_many :items, through: :item_orders
 
   enum status: %i[in_progress cancelled confirmed paid]
+
+  def total
+    Order.joins(:items).where(id: id).pluck(:price).sum
+  end
 end
