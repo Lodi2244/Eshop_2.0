@@ -17,8 +17,6 @@
 #  unconfirmed_email      :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
-#  first_name             :string
-#  last_name              :string
 #
 
 class User < ApplicationRecord
@@ -32,6 +30,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable, authentication_keys: [:login]
 
   has_many :orders, dependent: :destroy
+  has_one :profile, dependent: :destroy
+
+  after_create :bind_profile
 
   def login
     @login || username || email
@@ -48,4 +49,10 @@ class User < ApplicationRecord
     end
   end
   # rubocop:enable Rails/FindBy
+
+  private
+
+  def bind_profile
+    create_profile
+  end
 end

@@ -1,0 +1,72 @@
+<% content_for :content do %>
+ <div class="col-lg-12">
+  <!-- General information -->
+  <div class="card no-border bg-transparent">
+    <div class="card-title px-0 pb-0 no-border">
+      <h3 class="heading heading-6 strong-600">
+        Description
+      </h3>
+      <p class="mt-1 mb-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia euismod dolor a porttitor. Fusce auctor sit amet odio nec lacinia. Duis ultrices, urna at aliquam auctor, sapien arcu aliquam magna, vitae sollicitudin purus dui sit amet diam. Fusce vitae mollis neque. Vivamus porttitor, eros sed semper maximus, mauris purus hendrerit velit, nec aliquet augue massa consequat lorem. Maecenas in augue maximus, faucibus nisi nec, suscipit justo. In mollis nulla nec ullamcorper blandit. Fusce ut bibendum erat. Curabitur non nunc nunc. Nunc condimentum lectus non nunc convallis, nec auctor lacus sagittis. Donec lacus nibh, lobortis quis accumsan vel, aliquet id nulla. Praesent et ipsum semper, ornare tellus at, convallis lectus.
+      </p>
+    </div>
+  </div>
+
+  <hr class="mt-0 mb-0">
+
+  <!-- Account info -->
+  <div class="card no-border bg-transparent">
+    <div class="card-title px-0 pb-0 no-border">
+      <h3 class="heading heading-6 strong-600">
+        Matériel disponible
+      </h3>
+    </div>
+    <div class="card-body px-0">
+      <div class="row align-items-center">
+        <% 5.times do |i| %>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="block product no-border z-depth-2-top z-depth-2--hover">
+            <div class="block-image">
+              <a href="#">
+                <%= image_tag("boitier/lumix DC-GH5SE.png", class: "img-center") %>
+              </a>
+            </div>
+            <div class="block-body text-center">
+              <h3 class="heading heading-5 strong-600 text-capitalize">
+                <a href="#">
+                  item
+                  <%= i %>
+                </a>
+              </h3>
+              <p class="product-description">
+                <%= truncate("In maximus vestibulum odio, eget hendrerit nibh finibus eleifend. Maecenas semper nunc non odio aliquam, ut facilisis justo interdum. Praesent tempor justo hendrerit, ultricies dui quis, fermentum dolor. Pellentesque non lorem neque. Nunc at elementum ante. Curabitur vulputate risus enim, quis mattis dui rhoncus a. Integer ornare ipsum id nunc dignissim feugiat. Donec mi odio, faucibus id dignissim sit amet, iaculis sagittis est. Suspendisse euismod quis lectus id sagittis. In tincidunt lectus in ipsum rhoncus, quis dictum nibh ultricies.", lenght: 7, separator: ' ') %>
+              </p>
+              <div class="product-colors mt-2">
+                <div class="color-switch float-wrapper"></div>
+              </div>
+              <div class="product-buttons mt-4">
+                <div class="row align-items-center">
+
+                  <div class="col-12">
+                    <button type="button" class="btn btn-block btn-base-1 btn-circle btn-icon-left">
+                      <i class="icon ion-android-cart"></i>Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="mt-0 mb-0">
+</div>
+<% end %>
