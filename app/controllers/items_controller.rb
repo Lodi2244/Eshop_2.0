@@ -2,7 +2,7 @@
 
 class ItemsController < ApplicationController
   def index
-    @items = Item.all
+    @items = Item.where(category_id: params[:category_id])
     @categories = Category.all
   end
 
