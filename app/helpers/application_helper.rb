@@ -1,6 +1,17 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
+  def active?(path)
+    return 'active' if request.path == path
+
+    ''
+  end
+
+  def current_profile_tab
+    tabs = { '/profile': 'Profil', '/profile/edit': 'Modifier le profil' }
+    tabs[request.path.to_sym]
+  end
+
   def current_order
     if session[:order_id].nil?
       order = Order.create!(user_id: current_or_guest_user.id)

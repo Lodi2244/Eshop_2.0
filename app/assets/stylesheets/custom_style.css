@@ -10,3 +10,18 @@
 div.tp-bannertimer.tp-bottom {
   visibility: hidden !important;
 }
+
+.custom-nav {
+  height: 90px !important;
+}
+
+/* .nav-item-align {
+  padding: 0 !important;
+} */
+
+.btn-styled-custom {
+  padding: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
