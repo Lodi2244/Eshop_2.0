@@ -34,6 +34,8 @@ class User < ApplicationRecord
 
   after_create :bind_profile
 
+  include Notifications
+
   def login
     @login || username || email
   end
